@@ -1,0 +1,20 @@
+
+ホーム	企業情報		事業分野 	社员福利		採用情報		お問い合わせ  
+      	会社概要		业务概要		企业文化  
+      	理念经营		人才派遣		社内教育  
+      	組織図		委托方案  
+		アクセス		其他业务  
+					开发实绩  
+
+
+- `理念经营` 包括 `代表挨拶`, `セキュリティポリシー`
+- `业务概要` 包括 `品质管理` `项目管理` `开发语言环境` 
+
+
+参考站点
+
+https://www.haradacorp.co.jp/
+https://www.e-ldc.jp
+
+
+https://stackoverflow.com/questions/4770025/how-to-disable-scrolling-temporarily

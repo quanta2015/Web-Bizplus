@@ -1,0 +1,36 @@
+<ol class="carousel-indicators">
+{{for carousels}}
+  {{if #index === 0}}
+    <li data-target="#index-carousel" data-slide-to={{:#getIndex()}} class="active"></li>
+  {{else}} 
+    <li data-target="#index-carousel" data-slide-to={{:#getIndex()}}></li>
+  {{/if}}
+{{/for}}
+</ol>
+
+<div class="carousel-inner">
+{{for carousels}}
+  
+  <div class="carousel-item {{if #index === 0}}active{{/if}}">
+    <a href="#" rel="noopener noreferrer">
+      <img src="{{:imgw}}" class="d-block w-100 of-wide">
+      <img src="{{:imgm}}" class="d-block h-100 of-mobile">
+      <div class="carousel-caption  d-md-block">
+        <h4>{{:title}}</h4>
+        <p>{{:desc}}</p>
+      </div>
+    </a>
+  </div>
+{{/for}}
+</div>
+
+<a class="carousel-control-prev" href="#index-carousel" role="button" data-slide="prev">
+  <p class="carousel-control-wrap"><span class="carousel-control-prev-icon" aria-hidden="true"></span></p>
+  
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#index-carousel" role="button" data-slide="next">
+  <p class="carousel-control-wrap"><span class="carousel-control-next-icon" aria-hidden="true"></span></p>
+  
+  <span class="sr-only">Next</span>
+</a>

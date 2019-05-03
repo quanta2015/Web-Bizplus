@@ -1,0 +1,18 @@
+<div class="m-title ft-oswald">
+  <span>Section</span>
+</div>
+<div class="m-card-wrap">
+  {{for cards}}
+  <div class="m-card">
+    <div class="m-card-tl">
+      <span>{{:tl}}</span>
+      <label>{{:el}}</label>
+    </div>
+    <div class="m-card-img">
+      <img src="{{:img}}">
+    </div> 
+    <div class="m-desc">{{:desc}}</div>
+    <div class="m-card-more">詳しくはこちら</div>               
+  </div>
+  {{/for}}
+</div>
