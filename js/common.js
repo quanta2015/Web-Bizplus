@@ -8,20 +8,6 @@ const NO_MASK = 0;
 
 /* API DEF */
 const GET_ALL_CAROUSELS = '/carousel/getAllCarousel';
-const GET_INDEX_CASES = '/project/getProjects/10';
-const GET_INDEX_NEWS = '/new/getNews/10';
-
-const GET_ALL_NEWS = '/new/getAllNew';
-const GET_NEWS = '/new/getNews';
-const GE_NEW_ITEM = '/new/getNew';
-
-const GET_ALL_CASES = '/project/getAllProject';
-const GET_PROJECT_ITEM = '/project/getProject';
-
-const POST_COMMENT = '/message/addMessage';
-
-const GET_ALL_HONOR = '/honor/getAllHonor';
-const GET_ALL_QUAL = '/qual/getAllQual';
 
 
 /* LODER DEF */

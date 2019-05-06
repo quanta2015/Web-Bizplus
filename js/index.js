@@ -6,9 +6,8 @@ var INDEX = {
     INDEX.renderCard();
     INDEX.renderNews();
     renderFoorter();
-    initLanguageMenu()
+    initLanguageMenu();
   },
-
 
   renderNews: function() {
     promiseTmpl('GET', '/tmpl/index/news.tmpl', GET_ALL_CAROUSELS, null, MASK, function (r, e) {
@@ -82,8 +81,13 @@ var INDEX = {
               desc: "お客様のビジネスのプラスになる役割を果たす"}] 
           }
 
-      $('#index-carousel').append($.templates(r).render(e, rdHelper));
-      $('#index-carousel').carousel({interval: 1000})
+      // $('#index-carousel').append($.templates(r).render(e, rdHelper));
+
+      $('#index-carousel>.carousel-inner').append($('#carouselItem').render(e, rdHelper));
+      $('#index-carousel>.carousel-indicators').append($('#carouselIndicators').render(e, rdHelper));
+
+      // $('#index-carousel').carousel({interval: 1000})
+      // console.log('call')
     });
   },
 
@@ -92,10 +96,10 @@ var INDEX = {
       $('nav').append(r);
       $.fn.bootstrapDropdownHover({});
       initGlobel()
-      
-
     });
   }
 }
 
 $(INDEX.onReady);
+
+

@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html lang="zh-CN"  data-script-enabled="true" data-is-scrolling="false" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/iconfont.js"></script>
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+    <script src="/lib/bootstrap-hover-dropdown.min.js"></script>
+    <script src="/lib/jsrender.min.js"></script>
+    <script src="/lib/moment.min.js"></script>
+    <title>Bizplus</title>
+  </head>
+  <body>
+    <!-- header language -->
+    <header>
+      <div class="m-hcontact">
+        <span class="m-hcontact-wrap">
+          <img  class="m-hcontact-icon" src="imgs/icon_tel.png">
+          <span class="m-hcontact-tel"> 03-6709-8260</span>
+        </span>
+        <span>9:45～18:15(土日、祝祭日を除く)</span>
+      </div>
+      <div class="m-search">
+        <svg class="g-icon" aria-hidden="true">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        <input type="text" placeholder="サイト内検索">
+      </div>
+      <div class="m-lang">
+        <span class="active" data-lang='jp'>日</span>
+        <span data-lang='cn'>中</span>
+        <span data-lang='en'>英</span>
+      </div>
+    </header>
+    
+    <!-- nav menu-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light"></nav>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="format-detection" content="telephone=no">
+    <div class="m-main">
+      <!-- carousel -->
+      <div class="m-carousel carousel slide"  data-ride="carousel" id="index-carousel">
+        <ol class="carousel-indicators"></ol>
+        <div class="carousel-inner"></div>
+        <a class="carousel-control-prev" href="#index-carousel" role="button" data-slide="prev">
+          <p class="carousel-control-wrap"><span class="carousel-control-prev-icon" aria-hidden="true"></span></p>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#index-carousel" role="button" data-slide="next">
+          <p class="carousel-control-wrap"><span class="carousel-control-next-icon" aria-hidden="true"></span></p>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-  <link href="http://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,700" rel="stylesheet"> 
-  <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="lib/bootstrap.min.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
-  <title>bizplus</title>
-</head>
+      <!-- section card -->
+      <div class="m-section m-cards"></div>
 
-<body>
+      <!-- section news -->
+      <div class="m-section m-news"></div>
 
-  <header>
-    <div class="m-hcontact">
-      <span class="m-hcontact-wrap">
-        <img  class="m-hcontact-icon" src="imgs/icon_tel.png">
-        <span class="m-hcontact-tel"> 03-6709-8260</span>
-      </span>
-      <span>9:45～18:15(土日、祝祭日を除く)</span>
+      <!-- footer -->
+      <footer></footer>
     </div>
-    <div class="m-search">
-      <svg class="g-icon" aria-hidden="true">
-        <use xlink:href="#icon-search"></use>
-      </svg>
-      <input type="text" placeholder="サイト内検索">
-    </div>
-    <div class="m-lang">
-      <span class="active" data-lang='jp'>日</span>
-      <span data-lang='cn'>中</span>
-      <span data-lang='en'>英</span>
-    </div>
-  </header>
-      
-  <nav class="navbar navbar-expand-md navbar-light bg-light"></nav>
 
-  <div class="m-main">
-    <div class="m-carousel carousel slide"  data-ride="carousel" id="index-carousel"></div>
-    <div class="m-section m-cards"></div>
-    <div class="m-section m-news"></div>
-    <footer></footer>
-  </div>
-
-  <script src="/lib/jquery.min.js"></script>
-  <script src="/lib/bootstrap.bundle.min.js"></script>
-  <script src="/lib/bootstrap-hover-dropdown.min.js"></script>
-  <script src="/lib/jsrender.min.js"></script>
-  <script src="/lib/moment.min.js"></script>
-  <script src="/js/common.js"></script>
-  <script src="/js/index.js"></script>
-  <script src="/lib/iconfont.js"></script>
-</body>
-
+    <script src="/js/common.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
 </html>
+
+<script type="text/x-jsrender" id="carouselIndicators">
+{{for carousels}}
+  {{if #index === 0}}
+    <li data-target="#index-carousel" data-slide-to={{:#getIndex()}} class="active"></li>
+  {{else}}
+    <li data-target="#index-carousel" data-slide-to={{:#getIndex()}}></li>
+  {{/if}}
+{{/for}}
+</script>
+
+<script type="text/x-jsrender" id="carouselItem">
+{{for carousels}}
+  <div class="carousel-item {{if #index === 0}}active{{/if}}">
+    <a href="#" rel="noopener noreferrer">
+      <img src="{{:imgw}}" class="d-block w-100 of-wide">
+      <img src="{{:imgm}}" class="d-block h-100 of-mobile">
+      <div class="carousel-caption  d-md-block">
+        <h4>{{:title}}</h4>
+        <p>{{:desc}}</p>
+      </div>
+    </a>
+</div>
+{{/for}}
+</script>
