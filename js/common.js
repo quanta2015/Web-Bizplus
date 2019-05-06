@@ -182,30 +182,44 @@ function renderFoorter() {
   });
 }
 
-function setLang() {
-  $.getJSON(`lib/lang/${lang}.json`, function(e){
-    $("[data-locate]").each(function(m){
-      d = $(this).data("locate")
-      $(this).text(e[d])
-    })
+function setLang(langDB) {
+  e = langDB[langDB.cur]
+  $("[data-locate]").each(function(m){
+    d = $(this).data("locate")
+    $(this).text(e[d])
   })
 }
 
 function initGlobel() {
-  lang = localStorage.getItem("lang");
-  if (!lang && typeof(lang)!="undefined" && lang!=0) {
-    localStorage.setItem("lang","jp");
-    lang = 'jp'
+  langDB = JSON.parse(localStorage.getItem("langDB"));
+
+  if (!langDB && typeof(langDB)!="undefined" && langDB!=0) {
+    $.when(
+      $.ajax('lib/lang/cn.json'),
+      $.ajax('lib/lang/jp.json'),
+      $.ajax('lib/lang/en.json'))
+      .done(function (e1, e2, e3) {
+        langDB = {
+          'cn': e1[0],
+          'jp': e2[0],
+          'en': e3[0],
+          'cur': 'jp'
+        }
+        localStorage.setItem("langDB",JSON.stringify(langDB))
+        setLang(langDB)
+    })
   }else{
     $('.m-lang span').removeClass('active')
-    $(`.m-lang span[data-lang="${lang}"]`).addClass('active')
+    $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
+    setLang(langDB)
   }
-  setLang()
 }
 
 function setGlobel(lang) {
-  localStorage.setItem("lang",lang);
-  setLang()
+  langDB = JSON.parse(localStorage.getItem("langDB"));
+  langDB.cur = lang
+  localStorage.setItem("langDB",JSON.stringify(langDB));
+  setLang(langDB)
 }
 
 function initLanguageMenu() {
@@ -216,8 +230,6 @@ function initLanguageMenu() {
     setGlobel(lang)
   })
 }
-
-
 
 
 window.onload = function() {
