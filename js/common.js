@@ -232,6 +232,15 @@ function initLanguageMenu() {
 }
 
 
+function renderMenu() {
+  renderTmpl('/tmpl/nav/nav.tmpl', function (r) {
+    $('nav').append(r);
+    $.fn.bootstrapDropdownHover({});
+    initGlobel()
+  });
+}
+
+
 window.onload = function() {
     // 阻止双击放大
     var lastTouchEnd = 0;

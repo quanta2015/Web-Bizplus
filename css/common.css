@@ -1,6 +1,8 @@
 html,body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  /*font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif*/
   /*height: 100vh;*/
 }
 
@@ -48,4 +50,41 @@ input,textarea{
 
 .of-mobile {
   display: none;
+}
+
+.fn-right {
+    text-align: right;
+}
+
+.fn-margin-t50 {
+  margin-top: 50px;
+}
+
+.ft-small-x {
+  font-size: 14px;
+}
+.ft-small-xx {
+  font-size: 12px;
+}
+
+.m-section-title {
+    padding: 10px 40px;
+    background: #0274cc;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+  .m-main {
+     margin-top: 113px;
+  }
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .m-copyrights {
+    text-align: center;
+}
+
 }

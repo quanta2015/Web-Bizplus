@@ -1,0 +1,302 @@
+.m-child-section {
+    padding: 20px 0;
+}
+
+.m-child-title {
+    font-size: 48px;
+    text-align: center;
+    padding: 60px 0 20px;
+}
+
+.m-child-title>span {
+    margin: 0 80px;
+    display: block;
+    border-bottom: 1px dashed #ccc;
+    padding: 0 0 10px 0;
+}
+
+.m-child-wrap {
+    display: flex;
+    padding: 50px 80px;
+}
+
+.m-child-wrap.m-child-wrap-s {
+  padding: 0 80px;
+  margin-top: -30px;
+}
+
+
+
+.m-map {
+    flex: 1;
+    background: #666;
+    min-height: 400px;
+    margin-left: 20px;
+}
+
+.m-info>h1 {
+    font-size: 24px;
+    color: #0274cc;
+}
+
+.m-info>p {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.m-info>p>em {
+  font-weight: bold;
+}
+
+.m-info>p>em {
+    font-size: 18px;
+    font-style: normal;
+    color: #999;
+}
+
+.m-info>p>addr {
+    padding-left: 25px;
+    padding-top: 3px;
+    position: relative;
+}
+
+.m-info>p>addr:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    margin: auto;
+    background-color: #aaa;
+    width: 8px;
+    height: 1px;
+}
+
+.m-map .m-info>h1 {
+    font-size: 18px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+}
+
+.m-map .m-info>p {
+  margin: 0;
+}
+
+.m-map .m-info>p>span {
+    padding: 2px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.m-map .m-info {
+    margin: 0 10px;
+}
+
+button.gm-ui-hover-effect {
+    display: none!important;
+}
+
+
+.m-cdate {
+    width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #333;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-size: 15px;
+}
+
+.m-cdate>p {
+    display: flex;
+    flex-direction: column;
+}
+
+.m-cdate>p>span {
+    padding: 3px 0 0;
+}
+
+.m-agree {
+    font-size: 12px;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.m-agree a {
+    color: #0274cc;
+    font-weight: bold;
+}
+
+.m-agree span {
+    margin: 0 5px;
+}
+
+
+.m-form {
+    width: 720px;
+    margin: 0 auto 80px;
+    background: #eee;
+    padding: 40px 40px 0;
+    transition: .5s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.1), -2px -2px 5px rgba(0,0,0,.1);
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+.m-require:after {
+    content: "※必須";
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgba(51,51,51,0.5);
+    margin-left: 5px;
+}
+
+
+.m-form-item {
+    display: flex;
+    margin: 0 0 40px;
+}
+
+.m-form-tl {
+    width: 200px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.m-form-ip {
+    flex: 1;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.08);
+}
+
+.input--select, .input--text {
+  height: 50px;
+}
+    
+
+.input--select, .input--text,.input--textarea {
+    width: 100%;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    padding: 0.8em;
+    color: #666;
+    background: #fff;
+}
+
+.input--submit {
+    font-size: 18px;
+    background: #0274cc;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 12px 20px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+input.input--submit:hover {
+    background: #035fa5;
+}
+
+.m-head {
+    display: flex;
+    align-items: flex-end;
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 5px;
+}
+
+.m-head>h1 {
+    font-size: 16px;
+    margin: 0;
+    flex: 1;
+    color: #0274cc;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .m-child-title {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+  .m-child-title>span {
+      margin: 0 10px;
+      display: block;
+      border-bottom: 1px dotted #ccc;
+      padding-bottom: 10px;
+  }
+
+  .m-child-wrap {
+      padding: 20px;
+      flex-direction: column;
+  }
+
+  .m-map {
+      margin:0 -20px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+  }
+
+  .m-child-wrap>.m-info>p>em {
+      display: none;
+  }
+
+  .m-child-wrap>.m-info>.m-addr {
+      display: none;
+  }
+
+  .m-cdate {
+    width: auto;
+  }
+
+  .m-child-wrap.m-child-wrap-s {
+      padding: 0;
+      margin: -20px;
+  }
+
+  .m-form {
+      width: auto;
+      margin: 0;
+      padding: 10px 40px 0;
+  }
+
+  .m-form-item {
+      flex-direction: column;
+      margin: 0 0 15px;
+  }
+
+  .m-form-tl {
+      width: 100%;
+      padding-bottom: 10px;
+  }
+
+  .m-cdate {
+      font-size: 12px;
+      margin-bottom: 10px;
+  }
+
+  .m-agree {
+      flex-direction: column;
+  }
+
+  .m-ft-logo {
+    margin: 0 auto;
+  }
+
+}

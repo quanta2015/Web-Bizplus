@@ -1,0 +1,271 @@
+.child__txt {
+    max-width: 800px;
+    position: relative;
+}
+
+.m-section__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.ja__txt {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+.m-about-title {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.m-about-title>span {
+    display: flex;
+    border: 3px solid #333;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 20px;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.child-section__txt {
+    position: relative;
+}
+
+.child-title {
+    padding: 0 30px;
+    font-size: 22px;
+    margin: 0;
+    /* font-weight: 300; */
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.child-title:before {
+    width: 15px;
+    height: 15px;
+    background: #666;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+
+.m-about-footer {
+    display: flex;
+    width: calc( 100% - 100px );
+    margin: 40px auto;
+    padding: 40px 0;
+    border-top: 1px solid #333;
+}
+
+.m-about-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.m-contact__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.m-contact__wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.m-contact__wrap>span {
+    margin: 5px 0 0 0;
+}
+
+.m-about-pmark {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.m-about-pmark>img {
+    width: 100%;
+}
+
+.m-about-section {
+    padding: 10px 40px;
+    background: #0274cc;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.m-about-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.m-about-group>img {
+  width: 100%;
+}
+
+
+.m-about table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+.m-about td {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    vertical-align: top;
+}
+
+
+.child-section__img {
+    position: relative;
+}
+
+
+.m-img-profile>span:first-child {
+    font-size: 12px;
+    width: 100%;
+}
+
+.m-img-profile>span:nth-child(2) {
+    font-size: 24px;
+}
+
+
+.m-img-profile>span:nth-child(3) {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    line-height: 2;
+    padding: 0 0 0 5px;
+}
+
+.m-about .m-tl {
+    background: #0274cc;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.child-section__img>img {
+    width: 100%;
+}
+
+.m-img-profile {
+    position: absolute;
+    background: #fff;
+    bottom: 10px;
+    padding: 5px 15px;
+    margin: 0 0 0 15px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.m-child-section {
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.m-about-content>.m-child-section:nth-child(2n+1) {
+    background: #eee;
+}
+
+.m-shadow {
+    text-shadow: 3px 3px 5px rgba(0,0,0,.4);
+}
+
+.fn-margin {
+  margin: 50px 0;
+}
+
+.m-about-img {
+  width: 500px
+}
+
+@media only screen and (max-width: 768px) {
+  .m-child-section,.m-section__contents {
+    padding: 0 10px;
+  }
+
+  .m-about-title {
+    font-size: 24px;
+    padding: 20px 10px;
+    color: #666;
+    margin: 0;
+}
+
+.m-about-section {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.m-about-img {
+  width: 100%;
+  padding: 5px;
+}
+
+
+.m-img-profile {
+    width: 90%;
+}
+
+.child-title {
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0274cc;
+}
+
+.child-title:before {
+    background: #0274cc;
+}
+
+.m-about-footer {
+    width: calc( 100% - 20px );
+    margin: 20px 10px;
+    padding: 30px 0;
+    border-top: 1px solid #999;
+}
+
+.m-contact__title {
+    color: #0274cc;
+}
+
+.m-about-pmark {
+  display: none;
+}
+
+.m-left-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.child-section__img>img {
+    width: calc( 100% + 40px);
+    margin-left: -20px;
+}
+
+
+}

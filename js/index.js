@@ -2,9 +2,9 @@
 var INDEX = {
   onReady: function () {
     INDEX.renderCarousel();
-    INDEX.renderMenu();
     INDEX.renderCard();
     INDEX.renderNews();
+    renderMenu();
     renderFoorter();
     initLanguageMenu();
   },
