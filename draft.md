@@ -5,6 +5,10 @@
       	組織図		委托方案  
 		アクセス		其他业务  
 					开发实绩  
+# Bizplus ホームページ
+
+### プロジェクト　スケジュール
+
 
 
 - `理念经营` 包括 `代表挨拶`, `セキュリティポリシー`
@@ -16,5 +20,3 @@
 https://www.haradacorp.co.jp/
 https://www.e-ldc.jp
 
-
-https://stackoverflow.com/questions/4770025/how-to-disable-scrolling-temporarily

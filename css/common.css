@@ -2,8 +2,6 @@ html,body {
   margin: 0;
   padding: 0;
   width: 100%;
-  /*font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif*/
-  /*height: 100vh;*/
 }
 
 .noscroll{
@@ -48,6 +46,48 @@ input,textarea{
     font-size: 12px;
 }
 
+
+
+input:hover,
+textarea:hover,
+select:hover {
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.08);
+}
+
+.input--select, .input--text {
+  height: 50px;
+}
+    
+
+.input--select, .input--text,.input--textarea {
+    width: 100%;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    padding: 0.8em;
+    color: #666;
+    background: #fff;
+}
+
+.input--submit {
+  font-size: 18px;
+  background: #0274cc;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 12px 20px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+input.input--submit:hover {
+  background: #035fa5;
+}
+
 .of-mobile {
   display: none;
 }
@@ -75,16 +115,26 @@ input,textarea{
     font-weight: bold;
 }
 
-  .m-main {
-     margin-top: 113px;
-  }
+.m-main {
+   margin-top: 113px;
+}
+
+.m-child-title {
+    font-size: 48px;
+    text-align: center;
+    padding: 60px 0 0;
+}
 
 
 @media only screen and (max-width: 768px) {
 
+  input.input--submit {
+    font-size: 16px;
+  }
 
   .m-copyrights {
     text-align: center;
-}
+  }
+
 
 }

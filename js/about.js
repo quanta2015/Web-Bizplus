@@ -3,10 +3,10 @@ var ABOUT = {
   onReady: function () {
     renderMenu();
     renderFoorter();
-    ABOUT.renderAbout();
+    ABOUT.render();
   },
 
-  renderAbout: function () {
+  render: function () {
     const typeIdx = parseInt(getUrlVars()["type"]);
 
     if (typeIdx == 3) {

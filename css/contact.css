@@ -2,11 +2,7 @@
     padding: 20px 0;
 }
 
-.m-child-title {
-    font-size: 48px;
-    text-align: center;
-    padding: 60px 0 20px;
-}
+
 
 .m-child-title>span {
     margin: 0 80px;
@@ -171,45 +167,7 @@ button.gm-ui-hover-effect {
     flex: 1;
 }
 
-input:hover,
-textarea:hover,
-select:hover {
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.08);
-}
 
-.input--select, .input--text {
-  height: 50px;
-}
-    
-
-.input--select, .input--text,.input--textarea {
-    width: 100%;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    font-size: 14px;
-    outline: none;
-    width: 100%;
-    padding: 0.8em;
-    color: #666;
-    background: #fff;
-}
-
-.input--submit {
-    font-size: 18px;
-    background: #0274cc;
-    color: #fff;
-    display: block;
-    width: 100%;
-    padding: 12px 20px 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: .5s;
-}
-
-input.input--submit:hover {
-    background: #035fa5;
-}
 
 .m-head {
     display: flex;

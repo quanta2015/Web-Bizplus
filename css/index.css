@@ -756,6 +756,10 @@ li.nav-item.dropdown.show>a {
     border: none;
 }
 
+.m-ft-logo {
+    margin: 0 auto;
+}
+
 
 }
 /*-----  end MOBILE  -----*/
