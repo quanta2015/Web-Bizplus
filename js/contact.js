@@ -10,6 +10,7 @@ var CONTACT = {
   initMap: function() {
     googlemap(compangList[0])
     googlemap(compangList[1])
+    googlemap(compangList[2])
   },
 
   renderAbout: function () {
@@ -43,6 +44,15 @@ compangList = [{
   "lat":"34.68289830000001",
   "lng":"135.49180190000004",
   "id":"office-osaka__map"
+},{
+  "name":"中国西安支社",
+  "code":"〒162-0067",
+  "tel":"TEL 029-89368167",
+  "fax":"FAX 029-89368167",
+  "addr":"陕西省西安市未央区辛家庙新建国大厦10906号",
+  "lat":"34.311827",
+  "lng":"109.00838199999998",
+  "id":"office-xian__map"
 }]
 
 
