@@ -1,10 +1,13 @@
 
 var CAREERS = {
   onReady: function () {
-    renderMenu();
-    renderFoorter();
-    CAREERS.render();
-    
+    initGlobel(function(langDB) {
+      _langDB = langDB;
+      renderMenu();
+      renderFoorter();
+      initLanguageMenu();
+      CAREERS.render();
+    })
   },
 
   render: function () {

@@ -184,6 +184,10 @@ button.gm-ui-hover-effect {
     color: #0274cc;
 }
 
+.m-head>span {
+    color: #ff0000;
+}
+
 
 @media only screen and (max-width: 768px) {
   .m-child-title {

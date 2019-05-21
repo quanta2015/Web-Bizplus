@@ -3,16 +3,20 @@
 </div>
 <div class="m-card-wrap">
   {{for cards}}
+  
   <div class="m-card">
+    <a href="{{:url}}">
     <div class="m-card-tl">
-      <span>{{:tl}}</span>
+      <span data-locate="home_card[{{:#index}}].tl">{{:tl}} </span>
       <label>{{:el}}</label>
     </div>
     <div class="m-card-img">
       <img src="{{:img}}">
     </div> 
-    <div class="m-desc">{{:desc}}</div>
-    <div class="m-card-more">詳しくはこちら</div>               
+    <div class="m-desc" data-locate="home_card[{{:#index}}].desc">{{:desc}}</div>
+    <div class="m-card-more">詳しくはこちら</div>  
+    </a>             
   </div>
+  
   {{/for}}
 </div>

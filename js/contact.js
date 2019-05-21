@@ -1,10 +1,13 @@
 
 var CONTACT = {
   onReady: function () {
-    renderMenu();
-    renderFoorter();
-    CONTACT.renderAbout();
-    
+    initGlobel(function(langDB) {
+      _langDB = langDB;
+      renderMenu();
+      renderFoorter();
+      initLanguageMenu();
+      CONTACT.render();
+    })
   },
 
   initMap: function() {
@@ -13,7 +16,7 @@ var CONTACT = {
     googlemap(compangList[2])
   },
 
-  renderAbout: function () {
+  render: function () {
     
     renderTmpl('/tmpl/contact/contact.tmpl', function (r) {
       $('.m-contact').append($.templates(r).render(e, rdHelper));
@@ -46,7 +49,7 @@ compangList = [{
   "id":"office-osaka__map"
 },{
   "name":"中国西安支社",
-  "code":"〒162-0067",
+  "code":"〒710077",
   "tel":"TEL 029-89368167",
   "fax":"FAX 029-89368167",
   "addr":"陕西省西安市未央区辛家庙新建国大厦10906号",

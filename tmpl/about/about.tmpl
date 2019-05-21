@@ -1,31 +1,81 @@
 <div class="m-about-content">
-  <div class="m-section-title">企業情報 - 会社概要</div>
+  <div class="m-section-title">
+    <span data-locate="about.about">{{:about}}</span> - 
+    <span data-locate="about.summary_title">{{:summary_title}}</span>
+  </div>
   
   <div class="m-child-section">
-    <p class="m-about-title ft-oswald">
-      会社概要
+    <p class="m-about-title ft-oswald" data-locate="about.summary_title">
+      {{:summary_title}}
     </p>
 
     <div class="m-section__contents">
       <div class="child__txt ja__txt">
-        <p class="child-section__txt">Bizplus株式会社は2015年9月に設立されました。 中国をメインとした技術者によるソフトウェア開発企業です。 中国、日本での開発経験を有するPG、SE、BSEを擁しお客様 のニーズに合わせた高品質なシステムを開発、ご提供致します。 お客様に寄り添い、お客様とWIN-WINの関係を築けますよう、 誠心誠意努力し事業を推進して参ります。</p>
+        <p class="child-section__txt" data-locate="about.summary_desc">{{:summary_desc}}</p>
 
         <p>
           <table>
             <tbody>
-              <tr><td class="m-tl">社名</td><td>Bizplus株式会社</td><td class="m-tl">設立</td><td>平成27年9月</td></tr>
-              <tr><td class="m-tl">代表者</td><td>代表取締役社長 江橋 美香</td><td class="m-tl">業種</td><td>システム開発業 & コンサルタント業</td></tr>
-              <tr><td class="m-tl">取締役</td><td>鈴木　昌宏</td><td class="m-tl">監査役</td><td>木戸口　俊夫</td></tr>
-              <tr><td class="m-tl">顧問弁護士</td><td>長　宏一</td><td class="m-tl">顧問</td><td>北村　眞一 & 山口　晃</td></tr>
-              <tr><td class="m-tl">特定労働者派遣事業</td><td>特13-319165</td><td class="m-tl">労働者派遣事業許可証</td><td>派13-309906</td></tr>
-              <tr><td class="m-tl">決算月</td><td>8月</td><td class="m-tl">資本金</td><td>2200万円</td></tr>
-              <tr><td class="m-tl">社員数</td><td colspan="3">62名（2018年8月末現在）</td></tr>
-              <tr><td class="m-tl">取引銀行</td><td colspan="3">三菱東京UFJ銀行（中野駅前支店）& みずほ銀行（新宿西口支店）</td></tr>
-              <tr><td  class="m-tl" rowspan="5">事業内容</td><td colspan="3">ソフトウェアの受託開発業務</td></tr>
-              <tr><td colspan="3">ソフトウェアの開発要員の派遣業務</td></tr>
-              <tr><td colspan="3">コンピュータシステムの管理・運用業務</td></tr>
-              <tr><td colspan="3">海外進出コンサルティング業務</td></tr>
-              <tr><td colspan="3">人材教育・キャリアコンサルタント業務</td></tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r11t">社名</td>
+                <td data-locate="about.r11v">Bizplus株式会社</td>
+                <td class="m-tl" data-locate="about.r12t">設立</td>
+                <td data-locate="about.r12v">平成27年9月</td>
+              </tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r21t">代表者</td>
+                <td data-locate="about.r21v">代表取締役社長 江橋 美香</td>
+                <td class="m-tl" data-locate="about.r22t">業種</td>
+                <td data-locate="about.r22v">システム開発業 & コンサルタント業</td>
+              </tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r31t">取締役</td>
+                <td data-locate="about.r31v">鈴木　昌宏</td>
+                <td class="m-tl" data-locate="about.r32t">監査役</td>
+                <td data-locate="about.r32t">木戸口　俊夫</td>
+              </tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r41t">顧問弁護士</td>
+                <td data-locate="about.r41v">長　宏一</td>
+                <td class="m-tl" data-locate="about.r42t">顧問</td>
+                <td data-locate="about.r42v">北村　眞一 & 山口　晃</td>
+              </tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r51t">特定労働者派遣事業</td>
+                <td data-locate="about.r51v">特13-319165</td>
+                <td class="m-tl" data-locate="about.r52t">労働者派遣事業許可証</td>
+                <td data-locate="about.r52v">派13-309906</td>
+              </tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r61t">決算月</td>
+                <td data-locate="about.r61v">8月</td>
+                <td class="m-tl" data-locate="about.r62t">資本金</td>
+                <td data-locate="about.r62v">2200万円</td>
+              </tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r71t">社員数</td>
+                <td colspan="3" data-locate="about.r71v">62名（2018年8月末現在）</td>
+              </tr>
+              <tr>
+                <td class="m-tl" data-locate="about.r81t">取引銀行</td>
+                <td colspan="3" data-locate="about.r81v">三菱東京UFJ銀行（中野駅前支店）& みずほ銀行（新宿西口支店）</td>
+              </tr>
+              <tr>
+                <td  class="m-tl" rowspan="5" data-locate="about.r91t">事業内容</td>
+                <td colspan="3" data-locate="about.r91v1">ソフトウェアの受託開発業務</td>
+              </tr>
+              <tr>
+                <td colspan="3" data-locate="about.r91v2">ソフトウェアの開発要員の派遣業務</td>
+              </tr>
+              <tr>
+                <td colspan="3" data-locate="about.r91v3">コンピュータシステムの管理・運用業務</td>
+              </tr>
+              <tr>
+                <td colspan="3" data-locate="about.r91v4">海外進出コンサルティング業務</td>
+              </tr>
+              <tr>
+                <td colspan="3" data-locate="about.r91v5">人材教育・キャリアコンサルタント業務</td>
+              </tr>
             </tbody>
           </table>
         </p>
@@ -35,34 +85,29 @@
   </div>
   
   <div class="m-child-section">
-    <p class="m-about-title ft-oswald">
-      経営理念
+    <p class="m-about-title ft-oswald" data-locate="about.philosophy_title">
+      {{:philosophy_title}}
     </p>
 
     <div class="m-section__contents">
       <div class="child__txt ja__txt">
-        <p class="child-section__img m-about-img">
-          <img src="imgs/manage.svg" alt="">
+        <p class="child-section__img ">
+          <img class="m-about-img" src="imgs/manage.svg" alt="">
         </p>
         <div class="m-management">
-          <p class="child-section__txt m-shadow">
-            ①お客様第一主義を貫き、お客様とともに成長を続ける
+          {{for philosophy_desc}}
+          <p class="child-section__txt m-shadow" data-locate="about.philosophy_desc[{{:#index}}]">
+            {{:#data}}
           </p>
-          <p class="child-section__txt m-shadow">
-            ②優秀な技術を保持した社員は企業の財産であり、社員の成長を支援する
-          </p>
-          <p class="child-section__txt m-shadow">
-            ③新しい技術に絶えず挑戦し、ユニークな発想を大切にする
-          </p>
+          {{/for}}
         </div>
-        
       </div>
     </div>
   </div>
 
   <div class="m-child-section">
-    <p class="m-about-title ft-oswald">
-      代表挨拶
+    <p class="m-about-title ft-oswald" data-locate="about.greet_title">
+      {{:greet_title}}
     </p>
 
     <div class="m-section__contents">
@@ -70,25 +115,21 @@
         <p class="child-section__img">
           <img src="imgs/head.jpg" alt="">
           <label class="m-img-profile">
-            <span class="m-img-header">Bizplus株式会社 代表取締役社長</span>
+            <span class="m-img-header" data-locate="about.greet_president">Bizplus株式会社 代表取締役社長</span>
             <span class="m-img-jname">江桥美香</span>
             <span class="m-img-ename">/ YOSHIAKI TAKAHASHI</span>
           </label>
         </p>
-
-        <p class="child-section__txt fn-margin-t50">当社は、優秀なアジアの人材を育て、お客様に最なパフォーマンスを提供す
-る企業です。</p>
-        <p class="child-section__txt">社名であるBizplusは「お客様のヒジネスにプラスになる役割を果たす」とい
-う強い決意を表しています。</p>
-        <p class="child-section__txt">私たちは、最新のIT技術を学び、活川し、お客様をどりまく社会環境の変化に
-融合きせる為に意欲的にチャレンジを継続してまいります。</p>
-        <p class="child-section__txt">「人に優しい一T」「誰もが利川しやすい一T」「どこにいても使える一T」を、高品質で安全に
-活川できるよう努めていきます。</p>
-        <p class="child-section__txt">Bizplusは、元気な若者が多い新しい会社です。若さどやる気の強さで、誰にも負けないように学
-び、技術・ビジネスマナーを磨くこどを継続し、多くの人から信頼される会社ど評価頂くよう全力
-を尽くします。</p>
         
-        <p class="child-section__txt fn-right fn-margin">Bizplus株式会社 代表取締役社長<br>江橋 美香<br>2017年7月吉日</p>
+        {{for greet_list}}
+          <p class="child-section__txt" data-locate="about.greet_list[{{:#index}}]">
+            {{:#data}}
+          </p>
+        {{/for}}
+        
+        <p class="child-section__txt fn-right fn-margin">
+          <span data-locate="about.greet_president">{{:greet_president}}</span>
+          <br data-locate="about.greet_ename">江橋 美香<br>2017年7月吉日</p>
       </div>
     </div>
   </div>

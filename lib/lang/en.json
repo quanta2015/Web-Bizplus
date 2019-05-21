@@ -1,21 +1,244 @@
 {
-  "menu.home":"Home",
-  "menu.company":"Company Info",
-  "menu.company.info":"Company Profile",
-  "menu.company.idea":"Business Concepts",
-  "menu.company.grop":"Organization Chart",
-  "menu.company.safe":"Security Policy",
-  "menu.business":"Business Summary",
-  "menu.business.info":"Business Introduction",
-  "menu.business.disp":"Talent Dispatch",
-  "menu.business.bail":"Outsourcing Solutions",
-  "menu.business.othr":"Other Services",
-  "menu.business.ache":"Achievements",
-  "menu.benefits":"Welfare",
-  "menu.benefits.cult":"Corporate Style",
-  "menu.benefits.tech":"Internal Education",
-  "menu.jobs":"Recruitment info",
-  "menu.asks":"Contact us"
+
+  "menu_home":"Home",
+  "menu_company":"Company Info",
+  "menu_company_info":"Company Profile",
+  "menu_company_idea":"Business Concepts",
+  "menu_company_grop":"Organization Chart",
+  "menu_company_safe":"Security Policy",
+  "menu_business":"Business Summary",
+  "menu_business_info":"Business Introduction",
+  "menu_business_disp":"Talent Dispatch",
+  "menu_business_bail":"Outsourcing Solutions",
+  "menu_business_othr":"Other Services",
+  "menu_business_ache":"Achievements",
+  "menu_benefits":"Welfare",
+  "menu_benefits_cult":"Corporate Style",
+  "menu_benefits_tech":"Internal Education",
+  "menu_jobs":"Recruitment info",
+  "menu_asks":"Contact us",
+
+
+  "home_card":[{
+    "tl": "Company Profile",
+    "el": "Company Profile",
+    "img": "imgs/card01.jpg",
+    "desc": "Company introduction",
+    "url": "about.html?type=0"
+  }, {
+    "tl": "Business Profile",
+    "el": "Business Profile",
+    "img": "imgs/card02.jpg",
+    "desc": "We provide you with a wide range of solutions including alien dispatch, software brokerage and consultant business.",
+    "url": "business.html?type=0"
+  }, {
+    "tl": "Recruitment info",
+    "el": "Recruitment info",
+    "img": "imgs/card03.jpg",
+    "desc": "We are looking for engineers and general staff. With the expansion of the business, I also put emphasis on the adoption of new graduates, second graduates and middle schools.",
+    "url": "careers.html"
+  }, {
+    "tl": "Member benefits",
+    "el": "Member benefits",
+    "img": "imgs/card04.jpg",
+    "desc": "Education, medical care and welfare of the employees.",
+    "url": "benefit.html?type=0"
+  }],
+
+  "home_carousels": [{
+    "imgw": "imgs/carousel01w.jpg",
+    "imgm": "imgs/carousel01m.jpg",
+    "title": "Bizplus",
+    "desc": "Fulfill your business plus role"},
+  {
+    "imgw": "imgs/carousel02w.jpg",
+    "imgm": "imgs/carousel02m.jpg",
+    "title": "Bizplus",
+    "desc": "Continually challenging new technologies and taking care of unique ideas"},
+  {
+    "imgw": "imgs/carousel03w.jpg",
+    "imgm": "imgs/carousel03m.jpg",
+    "title": "Bizplus",
+    "desc": "Fulfill your business plus role"}],
+
+
+  "about": {
+      "about":"Corporate info",
+      "summary_title":"Company summary",
+      "summary_desc":"Bizplus Corporation was established in September 2015. It is a software development company by the engineer of China main. We develop and develop a high-quality system tailored to the needs of our customers with PG, Se and BSE with experience in China and Japan. We will be able to build a relationship between our customers and win win.",
+      "philosophy_title":"Management philosophy",
+      "philosophy_desc":["①We continue to grow with customer",
+        "②Employees who hold excellent skills are the property of the company and support the growth of employees",
+        "③New challenges are constantly challenging and unique ideas"],
+      "greet_title":"Representative greeting",
+      "greet_president":"President bizplus Corporation",
+      "greet_jname":"江桥美香",
+      "greet_ename":"YOSHIAKI TAKAHASHI",
+      "greet_list":["Our company is a company that raises talented Asian talents and provides the best performance to our customers. ","Bizplus, the company name, represents a strong determination to play a plus role in our customers. "," We will continue to work actively to learn the latest IT technology, to activate the active River, and to integrate with the changing social environment. "," I try to be able to be able to be a high quality, safe and active river of t gentle to IT, everyone who is easy to use river and IT that can be used anywhere","Bizplus is a new company with a lot of cheerful young people. It is the strength of youthful motivation, I learn to not lose to anyone, and continue to improve the technology and business manners, and I will do my best to evaluate the trust company. "],
+      "r11t":"Company Name",
+      "r11v":"Bizplus corporation",
+      "r12t":"Set up",
+      "r12v":"2015/9",
+      "r21t":"Consulting industry",
+      "r21v":"Mika Ebashi",
+      "r22t":"Industry",
+      "r22v":"System development industry & Consulting industry",
+      "r31t":"Director",
+      "r31v":"Masahiro Suzuki",
+      "r32t":"Audit",
+      "r32v":"Toshio Kidoguchi",
+      "r41t":"Counsel lawyer",
+      "r41v":"Cho Koichi",
+      "r42t":"Consultant",
+      "r42v":"Shinichi Kitamura",
+      "r51t":"Authenticate Specified Dispatch Business Number",
+      "r51v":"特13-319165",
+      "r52t":"Worker dispatching business license certificate",
+      "r52v":"派13-309906",
+      "r61t":"Accounts month",
+      "r61v":"August",
+      "r62t":"Capital",
+      "r62v":"2 million yen",
+      "r71t":"Number of employees",
+      "r71v":"62（as of the end of July 2018)",
+      "r81t":"Trading bank",
+      "r81v":"Mitsubishi Tokyo UFJ Bank(Nakano Station Branch & Mizuho Bank(Shinjuku Nishiguchi Branch)",
+      "r91t":"Business content",
+      "r91v1":"Commissioned software development business",
+      "r91v2":"Software developer dispatch business",
+      "r91v3":"Computer system management application business",
+      "r91v4":"Overseas advisory work",
+      "r91v5":"Talent education career counseling business"
+    },
+
+
+    "security":{
+      "part1_title":"Personal information protection policy",
+      "part1_list":["Bizplus Corporation (hereinafter referred to as our company) recognizes the importance of all personal information handled in the business as an information service industry, and tackles the operation of the personal information protection management system trusted by the customer。",
+        "In order to handle the personal information and personal information received from our customers in accordance with the activities of the business, we shall provide the following guidelines: personal information protection policy. We will make this policy well known to the staff (hereinafter referred to as employees) and endeavor to protect appropriate personal information。",
+        "1. In order to obtain and manage personal information, we establish a management system to protect personal information in accordance with our business activities, establish internal rules regarding acquisition, use and provision of appropriate personal information within the scope of which consent is obtained, and comply with this and do not use outside use.",
+        "2. Compliance with laws, guidelines and standards concerning personal information, compliance with the laws and regulations concerning handling of personal information, national guidelines, industry guidelines and other standards.",
+        "3. When an unexpected risk occurs in personal information, corrective action is promptly performed.",
+        "4. Regarding the response to complaints and consultations, we will clarify the procedure and respond appropriately to complaints and consultation from customers and employees.",
+        "5. Education and training of personal information protection will understand the importance of personal information protection and ensure that the personal information protection policy will be permeated to the entire company, and the necessary education, enlightenment and auditing will be carried out in order to treat the individual information appropriately.",
+        "6. Improvement of the management system of the social security system."
+      ],
+      "part2_title":"Handling of personal information in employment",
+      "part2_list":[{ "type":"child-title","val":"Purpose and scope of collection of personal information"},
+        {"type":"","val":"We use the personal information of the applicant collected within the necessary range for the purpose of the adoption of the employee in the range of the employment business of the company (Application qualification, adoption permission judgment, communication, etc.). If you do not wish to provide personal information, it is possible to refuse the offer by the judgment of the person himself. However, please note that this may affect the adoption."},
+        {"type":"child-title","val":"Provision of personal information"},
+        {"type":"","val":"We do not provide or disclose personal information to any third party except in the following cases.<BR>(1)In the case where the principal has been agreed<BR>(2)In the case where it is necessary to preserve the gross interests of life and health and property of the person and the public<BR>(3)Cases based on laws and regulations"},
+        {"type":"child-title","val":"Entrustment of personal information"},
+        {"type":"","val":"We may conquer all or part of the handling of personal information for the purpose of the collection use purpose. We are responsible for the assessment and management of the information and the handling of personal information."},
+        {"type":"child-title","val":"Safety management of personal information"},
+        {"type":"","val":"(1)In order to prevent personal information leakage, loss, falsification, and illegal access, we will continue to take necessary and appropriate safety management measures to protect personal information.<BR>(2)The application form of the person who is adopted as a result of the consideration is handled as personnel management data (personal information in the office) after entering the company. After the selection of the application document of the person who became the non adoption, it is discharged with responsibility.<"},
+        {"type":"child-title","val":"Disclosure of personal information"},
+        {"type":"","val":"When the person is requested to disclose the personal information of the applicant who is acquired and possessed by the company, it is confirmed that it is the person himself, and it responds without delay. For these specific request procedures, please contact the following inquiries. The application form is sent by mail or fax."}]
+    },
+
+
+    "business":{
+      "business":"Business field",
+      "business_title":"Business summary",
+      "dev_title":"Software development business",
+      "con_title":"Consultant business",
+      "for_title":"Foreign talent dispatch business",
+      "edu_title":"Human resource education business",
+      "dev_list":
+        [{"type":1,"val":"Main features"},
+        {"type":0,"val":"Many engineers are engaged in system development of Japanese companies for more than 5 years."},
+        {"type":0,"val":"In cooperation with partner companies, it’s also possible to do the large-scale development."},
+        {"type":0,"val":"Some of our engineers are able to use multiple language, they would develop business without any communication problems."},
+        {"type":0,"val":"We are able to develop business oversea."},
+        {"type":1,"val":"Systems development businesses"},
+        {"type":0,"val":"We can do proposing from system consulting to design, manufacture, testing, and program protecting."}],
+      "con_list":
+        ["As a bridge between Japan and China, we will provide a strategy consultant services to companies.",
+         "Expanding Asian market for Japanese companies",
+         "Corporate M & A support",
+         "Japanese market and sales strategy for Asian companies",
+         "Education · Medical · Operation of large commercial facilities etc."],
+      "for_list":
+        ["We have many foreign engineers respond to your business promotion and support in our company.",
+         "After obtaining the permission for a specific talent dispatching business in 2015, we are deploying dispatching business of foreign engineers in the IT field of Japan.",
+         "Dispatch Contents ： SE,PG,BSE",
+         "Dispatch field ： Manufacture,Finance,Securities,logistics,communication,control",
+         "Dispatch area ： Tokyo,Osaka,Nagoya,Kyoto,Kobe,Nagano,Hamamatsu"],
+      "edu_list":
+        ["Our employees are always taking the lesson of Japanese language education and manners education. Because that a lot of our clients hope to attend the lessons which we already supported, we develope this area of education industrialization. ","We provide practical lectures in line with practical skills by Japanese teachers. Our target is to pass Japanese JLPT test N1 to N2 Level."]
+    },
+
+
+    "foreigner":{
+      "business":"business area",
+      "business_title":"Human resources dispatch",
+      "title_main":"Bizplus has many foreign engineers to support customers' business promotion and support. In 2015, we obtained a permit for special worker dispatching business and we are currently in the IT field in Japan. We are working on dispatching foreign engineers",
+      "title_s1":"Dispatch content: SE, PG, BSE",
+      "title_s2":"Temporary area: Tokyo, Osaka, Nagoya, Kobe, Nagano, Hamamatsu",
+      "info_part":"Information related qualifications",
+      "info_s":"Basic Information Processing Engineer",
+      "lang_part":"Language Related",
+      "dev_part":"Development Language",
+      "db_part":"DB related terms",
+      "ex_part":"Goods area",
+      "ex_list1":["Financial[Banking/Securities]","Insurance","Sales Management","Manufacturing System"],
+      "ex_list2":["Distribution Industry System", "Logistics Industry", "Operation Management Business", "Human Resources, Payroll, Accounting, Financial System", "Build Infrastructure"]
+    },
+
+    "outsource":{
+      "business":"Business area",
+      "business_title":"Recommendation plan",
+      "title_s1":"Bizplus meets the diverse needs of our customers by utilizing our experienced PM and development team",
+      "title_s2":"Propose an optimal solution and provide high-quality (high-quality, high-tech) services until business understanding, upstream design, acceptance testing, etc."
+    },
+
+
+    "other": {
+      "business":"business area",
+      "business_title":"Other Business",
+      "rob_list":{
+         "title":"Robot Development Project",
+         "img":"imgs/skill/other0.jpg",
+         "list":["Research on Artificial Intelligence Machine Learning Solution","Participating in Robot Project Launching for Human Operating Operations for a Major Mortgage Loan Institution"]},
+      "con_list": {
+         "title":"Consultant Business",
+         "img":"imgs/skill/other02.jpg",
+         "list":["Asian market sales channel expansion for Japanese companies","M & A support for business enterprises","Asian companies entering Japan and sales strategy partners","Support for management of education, medical care and large commercial facilities","Japan And as a bridge between Asia and Asia, we provide strategic consulting services for companies. "]},
+      "edu_list": {
+         "title":"Human Resources Education Project",
+         "img":"imgs/skill/other03.jpg",
+         "list":["Japanese Business Manners, Communication Skills, Other Education Business","We were doing as part of our employee education, but customers other than our company were accepted and commercialized as requested by customers. "]}
+    },
+
+    "achieve":{
+      "business":"事業分野",
+      "business_title":"开发实绩",
+      "list":
+        [{
+          "title":"Company N sales system",
+          "tl1":"System overview",
+          "vl1":"Order function、Sales function、Shipping function",
+          "tl2":"Development scale",
+          "vl2":"<span>Secondary development</span><span>20Batches</span><span>15man-months </span>",
+          "tl3":"working details",
+          "vl3":"Detailed design、Manufacture、Unit test、Overall test、Performance improvement",
+          "tl4":"Development environment",
+          "vl4":"<span class='m-os'>win10</span> <span class='m-db'>Oracle 11g</span> <span class='m-lang'>VB.net</span><span class='m-lang'>Crystal RPT</span>"
+        },
+         {
+          "title":"Shopping settlement system of company X",
+          "tl1":"System overview",
+          "vl1":"Master system management, batch data capture",
+          "tl2":"Development scale",
+          "vl2":"<span>3 Batches</span><span>4 Man-days</span><span>2 man-months </span>",
+          "tl3":"working details",
+          "vl3":"DB design, manufacturing, unit testing",
+          "tl4":"Development environment",
+          "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SqlServer2008</span><span class='m-lang'>VB.Net</span>"
+        }]
+    }
+
+
 } 
 
  

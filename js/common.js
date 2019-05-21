@@ -8,6 +8,7 @@ const NO_MASK = 0;
 
 /* API DEF */
 const GET_ALL_CAROUSELS = '/carousel/getAllCarousel';
+const URL_CONFIG = '/conf/conf.json'
 
 
 /* LODER DEF */
@@ -168,29 +169,108 @@ function getUrlVars()
     return vars;
 }
 
-
-function renderNav(index) {
-  renderTmpl('/tmpl/nav/nav.tmpl', function (r) {
-    $('.navbar').append(r);
-    $('.nav-item').removeClass('active').eq(index).addClass('active');
-  });
+function nthIndexOf(str,c,num){
+    var x=str.indexOf(c);
+    for(var i=0;i<num;i++){
+        x=str.indexOf(c,x+1);
+    }
+    return x;
 }
 
-function renderFoorter() {
-  renderTmpl('/tmpl/footer/footer.tmpl', function (r) {
-    $('footer').append(r);
-  });
-}
 
+
+// 根据语言数据设置DOm节点
 function setLang(langDB) {
   e = langDB[langDB.cur]
   $("[data-locate]").each(function(m){
     d = $(this).data("locate")
-    $(this).text(e[d])
+
+
+
+    if (d.indexOf("[") != -1) {
+
+      if( d.split(".").length-1 >1 ) {
+        
+        if (nthIndexOf(d,'.',1)<d.indexOf("[")) {
+          // a.b.c[d]
+          fd0 = d.split(".")[0]
+          fd1 = d.split(".")[1]
+          fd2 = d.split(".")[2].split("[")[0]
+          fd3 = d.split(".")[2].split("[")[1].split("]")[0]
+          ret = e[fd0][fd1][fd2][fd3]
+
+        }else{
+          // a.b[c].d
+          fd0 = d.split(".")[0]
+          fd1 = d.split(".")[1].split("[")[0]
+          fd2 = d.split(".")[1].split("[")[1].split("]")[0]
+          fd3 = d.split(".")[2]
+          ret = e[fd0][fd1][fd2][fd3]
+        }
+      }else{
+        if( d.indexOf('.')<d.indexOf('[') ) {
+          // a.b[c]
+          fd0 = d.split(".")[0]
+          fd1 = d.split(".")[1].split("[")[0]
+          fd2 = d.split(".")[1].split("[")[1].split("]")[0]
+          ret = e[fd0][fd1][fd2]
+        }else{
+          // a[b].c
+          fd0 = d.split("[")[0]
+          fd1 = d.substr(d.indexOf("[")+1,1)
+          fd2 = d.split(".")[1]
+          ret = e[fd0][fd1][fd2]
+        }
+      }
+    }else if (d.indexOf(".") != -1){
+      if( d.split(".").length-1 >1 ) {
+        // a.b.c
+        fd0 = d.split(".")[0]
+        fd1 = d.split(".")[1]
+        fd2 = d.split(".")[2]
+        ret = e[fd0][fd1][fd2]
+      }else{
+        // a.b
+        fd0 = d.split(".")[0]
+        fd1 = d.split(".")[1]
+        ret = e[fd0][fd1]
+      }
+    }else{
+      ret = e[d]
+    }
+
+    $(this).html(ret)
   })
 }
 
-function initGlobel() {
+
+// 初始化多国语言数据
+// function initGlobel() {
+//   langDB = JSON.parse(localStorage.getItem("langDB"));
+
+//   if (!langDB && typeof(langDB)!="undefined" && langDB!=0) {
+//     $.when(
+//       $.ajax('lib/lang/cn.json'),
+//       $.ajax('lib/lang/jp.json'),
+//       $.ajax('lib/lang/en.json'))
+//       .done(function (e1, e2, e3) {
+//         langDB = {
+//           'cn': e1[0],
+//           'jp': e2[0],
+//           'en': e3[0],
+//           'cur': 'jp'
+//         }
+//         localStorage.setItem("langDB",JSON.stringify(langDB))
+//         setLang(langDB)
+//     })
+//   }else{
+//     $('.m-lang span').removeClass('active')
+//     $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
+//     setLang(langDB)
+//   }
+// }
+
+function initGlobel(cb) {
   langDB = JSON.parse(localStorage.getItem("langDB"));
 
   if (!langDB && typeof(langDB)!="undefined" && langDB!=0) {
@@ -206,15 +286,17 @@ function initGlobel() {
           'cur': 'jp'
         }
         localStorage.setItem("langDB",JSON.stringify(langDB))
-        setLang(langDB)
+        cb(langDB)
     })
   }else{
     $('.m-lang span').removeClass('active')
     $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
-    setLang(langDB)
+    cb(langDB)
   }
 }
 
+
+// 设置多国语言数据
 function setGlobel(lang) {
   langDB = JSON.parse(localStorage.getItem("langDB"));
   langDB.cur = lang
@@ -222,6 +304,8 @@ function setGlobel(lang) {
   setLang(langDB)
 }
 
+
+// 初始化语言菜单
 function initLanguageMenu() {
   $('.m-lang span').on('click', function(){
     $('.m-lang span').removeClass('active')
@@ -232,13 +316,35 @@ function initLanguageMenu() {
 }
 
 
+// 渲染导航条
 function renderMenu() {
   renderTmpl('/tmpl/nav/nav.tmpl', function (r) {
     $('nav').append(r);
     $.fn.bootstrapDropdownHover({});
-    initGlobel()
+    setLang(_langDB)
+    // initGlobel()
   });
 }
+
+
+// 渲染页尾
+function renderFoorter() {
+  renderTmpl('/tmpl/footer/footer.tmpl', function (r) {
+    $('footer').append(r);
+    setLang(_langDB)
+    // initGlobel()
+  });
+}
+
+
+
+
+
+
+
+
+
+
 
 
 window.onload = function() {

@@ -1,5 +1,8 @@
 <div class="m-contact-content">
-  <div class="m-section-title">事業分野 - 业务概要</div>
+  <div class="m-section-title">
+    <span data-locate="business.business">{{:business}}</span> - 
+    <span data-locate="business.business_title">{{:business_title}}</span>
+  </div>
   
   <div class="m-child-section">
     <p class="m-child-title ft-oswald">
@@ -10,54 +13,52 @@
       <div class="m-bs-item">
         <div class="m-bs-head">
           <img src="imgs/skill/bs01.jpg" alt="">
-          <h1>软件开发业务</h1>
+          <h1 data-locate="business.dev_title">{{:dev_title}}</h1>
         </div>
         <div class="m-bs-desc">
-          <h2>主要特征</h2>
-          <span>拥有大量具备5年以上日企系统开发经验的技术者</span>
-          <span>通过与关联企业合作，有规模扩大的可能</span>
-          <span>拥有具备多国语言能力的技术者，据有无国境障碍交流实现开发的可能</span> 
-          <span>具备大量海外开发技术</span>
-          <h2>系统构筑业务</h2>
-          <span>拥有从系统咨询到要件定义，设计，制造，测试，运用维护等全程进行提案的能力</span>
+          {{for dev_list}}
+            {{if (type==1)}}
+              <h2 data-locate="business.dev_list[{{:#getIndex()}}].val">{{:val}}</h2>
+            {{else}}
+              <span data-locate="business.dev_list[{{:#getIndex()}}].val">{{:val}}</span>
+            {{/if}}
+          {{/for}}
         </div>
       </div>
       <div class="m-bs-item">
         <div class="m-bs-head">
           <img src="imgs/skill/bs02.jpg" alt="">
-          <h1>咨询业务</h1>
+          <h1 data-locate="business.con_title">{{:con_title}}</h1>
         </div>
         <div class="m-bs-desc">
-          <span>作为日本和亚洲各国的桥梁，面向企业提供战略咨询服务。</span>
-          <span>扩大日本企业的亚洲市场销路</span>
-          <span>企业的M & A支援</span>
-          <span>为亚洲企业提供进入日本・营业战略伙伴</span>
-          <span>教育、医疗、大型商业设施等的运营</span>
+          {{for con_list}}
+            <span data-locate="business.con_list[{{:#getIndex()}}]">{{:#data}}</span>
+          {{/for}}
         </div>
       </div>
       <div class="m-bs-item">
         <div class="m-bs-head">
           <img src="imgs/skill/bs03.jpg" alt="">
-          <h1>外国人才派遣事业</h1>
+          <h1 data-locate="business.for_title">{{:for_title}}</h1>
         </div>
         <div class="m-bs-desc">
-          <span>作为日本和亚洲各国的桥梁，面向企业提供战略咨询服务。</span>
-          <span>扩大日本企业的亚洲市场销路</span>
-          <span>企业的M & A支援</span>
-          <span>为亚洲企业提供进入日本・营业战略伙伴</span>
-          <span>教育、医疗、大型商业设施等的运营</span>
+          {{for for_list}}
+            <span data-locate="business.for_list[{{:#getIndex()}}]">{{:#data}}</span>
+          {{/for}}
         </div>
       </div>
       <div class="m-bs-item">
         <div class="m-bs-head">
           <img src="imgs/skill/bs04.jpg" alt="">
-          <h1>人才教育事业</h1>
+          <h1 data-locate="business.edu_title">{{:edu_title}}</h1>
         </div>
         <div class="m-bs-desc">
-          <span>日本语教育（礼仪教育）事业对员工进行日本语教育（礼仪教育）是公司职员教育的一贯做法，根据客户的要求，形成了本公司以外的客人也可以参加的事业化教育活动。</span>
-          <span>日语教师根据实务进行实践教学，最终以日语N1级和N2级合格作为目标。</span>
+          {{for edu_list}}
+            <span data-locate="business.edu_list[{{:#getIndex()}}]">{{:#data}}</span>
+          {{/for}}
         </div>
       </div>
+      
 
     </div>
     

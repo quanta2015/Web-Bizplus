@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-.m-about-title>span {
+.m-about-title>label {
     display: flex;
     border: 3px solid #333;
     justify-content: center;
@@ -141,6 +141,8 @@
 
 .child-section__img {
     position: relative;
+   margin-bottom: 50px;
+   text-align: center;
 }
 
 
@@ -168,7 +170,8 @@
 }
 
 .child-section__img>img {
-    width: 100%;
+    max-width: 100%;
+    /*width: 500px;*/
 }
 
 .m-img-profile {
@@ -206,7 +209,7 @@
 
 @media only screen and (max-width: 768px) {
   .m-child-section,.m-section__contents {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .m-about-title {
@@ -232,10 +235,11 @@
 }
 
 .child-title {
-    padding: 0 30px;
-    font-size: 20px;
+    padding: 2px 0 0 30px;
+    font-size: 18px;
     font-weight: 600;
     color: #0274cc;
+    text-align: left;
 }
 
 .child-title:before {
@@ -264,7 +268,6 @@
 
 .child-section__img>img {
     width: calc( 100% + 40px);
-    margin-left: -20px;
 }
 
 

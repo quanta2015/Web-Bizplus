@@ -1,5 +1,7 @@
 <div class="m-contact-content">
-  <div class="m-section-title">事業分野 - 其他业务</div>
+  <div class="m-section-title"><span data-locate="other.business">{{:business}}</span> - 
+    <span data-locate="other.business_title">{{:business_title}}</span>
+  </div>
   
   <div class="m-child-section">
     <p class="m-child-title ft-oswald">
@@ -8,42 +10,46 @@
   
 
     <div class="m-other-section">
+      
       <div class="m-other-item">
         <div class="m-other-title">
-          <h1>ロボット開発事業</h1>
-          <img src="imgs/skill/other01.jpg" alt="">
+          <h1 data-locate="other.rob_list.title">{{:rob_list.title}}</h1>
+          <img src="{{:rob_list.img}}" alt="">
         </div>
         <p>
-          <label>ロボット開発事業</label>
-          <span>人工知能機械学習ソリューションの研究</span>
-          <span>大手住宅ローン金融機関向け、人の操作業務を代行するロボットプロジェクト立上げに参画</span>
+          <label data-locate="other.rob_list.title">{{:rob_list.title}}</label>
+          {{for rob_list.list}}
+          <span data-locate="other.rob_list.list[{{:#index}}]">{{:#data}}</span>
+          {{/for}}
         </p>
       </div>
+
       <div class="m-other-item">
         <div class="m-other-title">
-          <h1>コンサルタント事業</h1>
-          <img src="imgs/skill/other02.jpg" alt="">
+          <h1 data-locate="other.con_list.title">{{:con_list.title}}</h1>
+          <img src="{{:con_list.img}}" alt="">
         </div>
         <p>
-          <label>コンサルタント事業</label>
-          <span>日本企業のアジア市場販路拡大</span>
-          <span>企業のM&A支援</span>
-          <span>アジア企業の日本進出・営業戦略パートナー</span>
-          <span>教育・医療・大型商業施設等運営のサポート</span>
-          <span>日本とアジアの懸け橋として、企業に向けて戦略コンサルタントサービスを提供致します。</span>
+          <label data-locate="other.con_list.title">{{:con_list.title}}</label>
+          {{for con_list.list}}
+          <span data-locate="other.con_list.list[{{:#index}}]">{{:#data}}</span>
+          {{/for}}
         </p>
       </div>
+
       <div class="m-other-item">
         <div class="m-other-title">
-          <h1>人材教育事業</h1>
-          <img src="imgs/skill/other03.jpg" alt="">
+          <h1 data-locate="other.edu_list.title">{{:edu_list.title}}</h1>
+          <img src="{{:edu_list.img}}" alt="">
         </div>
         <p>
-          <label>人材教育事業</label>
-          <span>日本語ビジネスマナー、コミュニケーションスキル、他教育事業</span>
-          <span>弊社社員教育の一貫としてやっておりましたが、お客様からの要望により弊社以外のお客様も受け入れ事業化致しました。</span>
+          <label data-locate="other.edu_list.title">{{:edu_list.title}}</label>
+          {{for edu_list.list}}
+          <span data-locate="other.edu_list.list[{{:#index}}]">{{:#data}}</span>
+          {{/for}}
         </p>
       </div>
+      
       
     </div>
     

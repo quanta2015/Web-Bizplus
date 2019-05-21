@@ -1,5 +1,7 @@
 <div class="m-contact-content">
-  <div class="m-section-title">事業分野 - 开发实绩</div>
+  <div class="m-section-title"><span data-locate="achieve.business">{{:business}}</span> - 
+    <span data-locate="achieve.business_title">{{:business_title}}</span>
+  </div>
   
   <div class="m-child-section">
     <p class="m-child-title ft-oswald">
@@ -8,55 +10,33 @@
     
 
     <div class="m-achieve-section">
+
+      {{for list}}
       <div class="m-achieve-item">
-        <div class="m-achieve-head">
-          N社の販売システム
+        <div class="m-achieve-head" data-locate="achieve.list[{{:#index}}].title">
+          {{:title}}
         </div>
         <div class="m-achieve-wrap">
           <div class="m-achieve-row">
-            <div class="m-achieve-tl">システム概要</div> 
-            <div class="m-achieve-co">受注機能、売上機能、出荷機能</div>
+            <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl1">{{:tl1}}</div> 
+            <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl1">{{:vl1}}</div>
           </div>
           <div class="m-achieve-row">
-            <div class="m-achieve-tl">開発規模：</div> 
-            <div class="m-achieve-co"> <span>二次開発</span><span>20画面</span><span>15人月</span></div>
+            <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl2">{{:tl2}}</div> 
+            <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl2">{{:vl2}}</div>
           </div>
           <div class="m-achieve-row">
-            <div class="m-achieve-tl">作業内容：</div> 
-            <div class="m-achieve-co">詳細設計、製造、単体テスト、総合テスト、性能改善</div>
+            <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl3">{{:tl3}}</div> 
+            <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl3">{{:vl3}}</div>
           </div>
           <div class="m-achieve-row">
-            <div class="m-achieve-tl">開発環境：</div> 
-            <div class="m-achieve-co"><span class="m-os">win10</span> <span class="m-db">Oracle 11g</span> <span class="m-lang">VB.net</span><span class="m-lang">Crystal RPT</span></div>
+            <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl4">{{:tl4}}</div> 
+            <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl4">{{:vl4}}</div>
           </div>
         </div>
       </div>
+      {{/for}}
 
-
-      <div class="m-achieve-item">
-        <div class="m-achieve-head">
-          X社のショッピング決算システム
-        </div>
-        <div class="m-achieve-wrap">
-          <div class="m-achieve-row">
-            <div class="m-achieve-tl">システム概要</div> 
-            <div class="m-achieve-co">マスタ系の管理、バッチのデータ取り込み</div>
-          </div>
-          <div class="m-achieve-row">
-            <div class="m-achieve-tl">開発規模：</div> 
-            <div class="m-achieve-co"><span>３画面</span><span>４バッチ</span><span>２人月</span></div>
-          </div>
-          <div class="m-achieve-row">
-            <div class="m-achieve-tl">作業内容：</div> 
-            <div class="m-achieve-co">DB設計、製造、単体テスト</div>
-          </div>
-          <div class="m-achieve-row">
-            <div class="m-achieve-tl">開発環境：</div> 
-            <div class="m-achieve-co"><span class="m-os">WIN7</span><span class="m-db">SqlServer2008</span><span class="m-lang">VB.Net</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
     
   </div>
 

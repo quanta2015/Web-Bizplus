@@ -1,5 +1,8 @@
 <div class="m-contact-content">
-  <div class="m-section-title">事業分野 - 人才派遣</div>
+  <div class="m-section-title">
+    <span data-locate="foreigner.business">{{:business}}</span> - 
+    <span data-locate="foreigner.business_title">{{:business_title}}</span>
+  </div>
   
   
   <div class="m-child-section">
@@ -9,17 +12,17 @@
     
     <div class="m-child-section m-child-info">
       <p class="m-info-wrap">
-        <label>Bizplusは、お客様の業務推進及びサポートに対応する為の多くの外国人技術者を擁しております。2015年、特定労働者派遣事業許可を取得し現在、日本のIT分野において外国人技術者の派遣業務を展開しています</label>
-        <span>派遣内容: ＳＥ、ＰＧ、ＢＳＥ</span>
-        <span>派遣地域: 東京、大阪、名古屋、神戸、長野、浜松</span>
+        <label data-locate="foreigner.title_main">{{:title_main}}</label>
+        <span data-locate="foreigner.title_s1">{{:title_s1}}</span>
+        <span data-locate="foreigner.title_s2">{{:title_s2}}</span>
       </p>
     </div>
 
     <div class="m-business-section">
       <div class="m-business-item">
-        <h1>情報関連資格</h1>
+        <h1 data-locate="foreigner.info_part">{{:info_part}}</h1>
         <div class="m-business-wrap">
-          <span>基本情報処理技術者</span>
+          <span data-locate="foreigner.info_s">{{:info_s}}</span>
           <span>Oracle Gold(10g, 11g)</span>
           <span>PL/SQL Silver</span>
         </div>
@@ -33,7 +36,7 @@
 
 
       <div class="m-business-item">
-        <h1>言語関連</h1>
+        <h1 data-locate="foreigner.lang_part">{{:lang_part}}</h1>
         <div class="m-lang-wrap">
           <div class="m-lang-item">
             <img src="imgs/skill/lang-jlpt.svg" alt="">
@@ -68,7 +71,7 @@
 
 
       <div class="m-business-item">
-        <h1>開発言語</h1>
+        <h1 data-locate="foreigner.dev_part">{{:dev_part}}</h1>
         <div class="m-business-wrap">
           <span>Java</span>
           <span>C / C++ / C#</span>
@@ -84,7 +87,7 @@
 
 
       <div class="m-business-item">
-        <h1>DB関連語</h1>
+        <h1 data-locate="foreigner.db_part">{{:db_part}}</h1>
         <div class="m-db-wrap">
           <div class="m-lang-item m-db-item">
             <img src="imgs/skill/db-db2.svg" alt="">
@@ -111,29 +114,19 @@
 
 
       <div class="m-business-item">
-        <h1>得意分野</h1>
+        <h1 data-locate="foreigner.ex_part">{{:ex_part}}</h1>
         <div class="m-business-wrap">
-          <span>金融系[銀行業/証券業]</span>
-          <span>保険業</span>
-          <span>販売管理系</span>
-          <span>製造業システム</span>
+          {{for ex_list1}}
+            <span data-locate="foreigner.ex_list1[{{:#index}}]">{{:#data}}</span>
+          {{/for}}
         </div>
         <div class="m-business-wrap">
-          <span>流通業システム</span>
-          <span>物流業</span>
-          <span>運用管管理業務</span>
-          <span>人事、給与、会計、財務システム</span>
-          <span>インフラ構築</span>
+          {{for ex_list2}}
+            <span data-locate="foreigner.ex_list2[{{:#index}}]">{{:#data}}</span>
+          {{/for}}
         </div>
       </div>
 
-
-
-
-
     </div>
-    
   </div>
-
-
 </div>

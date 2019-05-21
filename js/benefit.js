@@ -1,10 +1,13 @@
 
 var BENEFIT = {
   onReady: function () {
-    renderMenu();
-    renderFoorter();
-    BENEFIT.render();
-    
+    initGlobel(function(langDB) {
+      _langDB = langDB;
+      renderMenu();
+      renderFoorter();
+      initLanguageMenu();
+      BENEFIT.render();
+    })
   },
 
   render: function () {
