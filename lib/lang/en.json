@@ -226,7 +226,7 @@
           "vl4":"<span class='m-os'>win10</span> <span class='m-db'>Oracle 11g</span> <span class='m-lang'>VB.net</span><span class='m-lang'>Crystal RPT</span>"
         },
          {
-          "title":"Shopping settlement system of company X",
+          "title":"Shopping settlement system of companyX",
           "tl1":"System overview",
           "vl1":"Master system management, batch data capture",
           "tl2":"Development scale",
@@ -236,6 +236,202 @@
           "tl4":"Development environment",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SqlServer2008</span><span class='m-lang'>VB.Net</span>"
         }]
+    },
+
+    "edu":{
+      "title_main":"Membership benefits",
+      "title_sub":"corporate culture",
+      "list":[{
+        "title":"The purpose of company education",
+        "img":"imgs/b01.jpg",
+        "dlist":["From compliance measures, enhancing sales force, becoming an attractive company, improving business performance, improving productivity, etc., we are conducting education and training for the purpose of human resource development, such as improvement and motivation of employees",
+          "・Acquisition of business manners in Japan",
+          "・Improving communication skills",
+          "・Japanese customs-manners in Japan"]
+      },{
+        "title":"Business Manner",
+        "img":"imgs/b02.jpg",
+        "dlist":[
+          "Not only does the sense of learning business manners not only make the other person uncomfortable, it is also a weapon to make your work more advantageous. ",
+          "There are a wide variety of basics such as greetings and bows, and how to pass business cards that are required for business. ",
+          "Business manners are like lubricants for communication and are the first step in connecting people. ",
+          "In business manner education, we will study common sense and points related to manners that are useful in actual business situations in an easy-to-understand manner."]
+      },{
+        "title":"Communication Skill",
+        "img":"imgs/b03.jpg",
+        "dlist":["[Not good at communication] There are so many people talking about it,communication skill is required",
+          "1.language",
+          "Sentence is easier than language.[how to say the word] is more important than [what you want to say].That’s what we call The Communication. For that reason,[communicate],[listen],[inquire] is important.",
+          "2.Body language",
+          "Expression,tone of sound,behavior and so on.In one sentence, the language affects people 1 piont but bodylanguage affect 9 pionts.Bodylanguage,build trust relationship,get to know each other,this section accounts for a large proportion.Even in workplace,methods and communication are easier to learn."]
+      },{
+        "title":"Habits of Japan,Manners of Japan",
+        "img":"imgs/b04.jpg",
+        "dlist":["Japanese culture has many common rules,even in traditional situation.It just like talking to your neighbors, clients and guests and politicians and other socical situations.Begin with the questions of daliy lifes and topics.Discuss with each other when communicating with people from other countries.",
+          "After you understand the Japanese manners, life and work will goes better and it’s better to understand each other."]
+      }],
+      "ptitle":"Program",
+      "author":"高橋 徹",
+      "desc":"A former bank clerk. Chief editor of Shanghai Branch Branch, magazine Shanghai in 1995. Since 1902, he participated in the IT industry training in China. He was involved in dispatching technicians to Japan in the hokukyo soft matter and Wuxi base, Jiangsu province.",
+      "table_list":[
+        {
+          "clist":["Every month","Tuesday","Wednesday","Friday","Sunday"]
+        },{
+          "clist":["First weeks"," ","manners","business manners","Japanese certification class 2, class 1"]
+        },{
+          "clist":["Second weeks","Communication skills","manners","business manners","Japanese certification class 2, class 1"]
+        },{
+          "clist":["Third weeks"," ","manners","business manners","Japanese certification class 2, class 1"]
+        },{
+          "clist":["Forth weeks","Communication skills","manners","business manners","Japanese certification class 2, class 1"]
+        }]
+    },
+
+    "style":{
+      "title_main":"Company Benefits",
+      "title_sub":"Internal Education",
+      "style_title":"Characteristics of Bizplus are targeted to the following corporate culture.",
+      "style_list":["an environment where employees can speak freely","an environment where communication can be taken","the confidence among employees is taken","an employee feels worthwhile to work on work","The environment in which discussions are taking place"," the workplace always has a bright atmosphere and the energy of youth"],
+      "news_list":[{
+        "title":"3rd Employee Travel",
+        "date":"2018.11.22 - 2018.11.23",
+        "img_list":[{
+          "tl":"Managed Idle",
+          "url":"imgs/style01.jpg"
+        },{
+          "tl":"Speech from CEO",
+          "url":"imgs/style02.jpg"
+        },{
+          "tl":"I want to join together",
+          "url":"imgs/style03.jpg"
+        }],
+        "desc_list":["I went on an employee trip for two days a night as a early-year-end party. Healed by capybara soaked in a hot spring bath at Izu Shaboten Animal Park, climbed Mt. I was blessed with a great deal of fatigue.","I'm going to try again next year ((')`))","What was the first prize of the Bingo tournament was Dyson's Cyclone vacuum cleaner"]
+      },{
+        "title":"2nd Employee Travel",
+        "date":"2017.6.9 - 2017.6.11",
+        "img_list":[],
+        "desc_list":["I went on a trip for 3 days and 2 nights to invite our employees and related people.","The first day went to Itoman in Okinawa, the second day was Okinawa Churaumi I went to the aquarium and enjoyed swimming on the third day.","I would like to establish it as an annual event once a year."]
+      },{
+        "title":"First Time Employee Travel",
+        "date":"2016.4.23 - 2016.4.24",
+        "img_list":[],
+        "desc_list":["We went out for a 2-day trip to our company and our associates.","The first day is Karuizawa-Ueda-Manza area, the second day is Kusatsu Onsen- I went out to the area of ​​Numata. ","I would like to be established as an annual event once a year."]
+      },{
+        "title":"First annual company year-end party",
+        "date":"2015.12.23",
+        "img_list":[],
+        "desc_list":["On the 23rd, Bizplus employees and related parties were called to hold a year-end party.","You are a young company that has been established for less than a year, but many people have participated. It was a lively gathering.","I was very thankful for this year and I hope to see you again next year with Bizplus. "]
+      }]
+    },
+
+    "careers":{
+      "title_main":"Recruitment info",
+      "careers_title":"We are looking for a person who is positive and growing ambitious.",
+      "title_list":[
+        "Our company was just founded in 2014.",
+        "The average age of the employees is 30 years old, characterized by a large number of young people.",
+        "If you give it a try, it's an immature company.","That's why growth is an environment where you can challenge anything if you are motivated.",
+        "We are looking for people who have ambitions and who can grow together while having fun, who will be able to feel the potential like that.",
+        "We look forward to hearing from you"],
+      "part1_title":"Recruitment Guidelines",
+      "part1_stitle":"Opening Jobs",
+      "part1_item":[{
+        "label":"2 salespeople",
+        "list":["Expand sales positions, propose to customers, provide information, etc.","Following employees","If you want to actively participate in each sales event"]
+      },{
+        "label":"10 technical staff (programmer / system engineer)",
+        "list":["If you are interested in IT","Information system design of various industries such as administration, logistics, finance, sales management (preferring those who have some kind of strength)","Network construction and Software and system development and proposal","Business application development (Java, .NET etc.)","Web application development (PHP, Ruby, Perl etc) ","Communication application development (Java, C # etc) ","Network and server construction operation","Information system maintenance and operation, help desk","System maintenance and operation","Android, iPhone development"]
+      }],
+      "part2_title":"eligibility",
+      "part2_item":["If you have a high school or higher, have experience in IT design / development, project management, and consultant. And you have advanced technical qualifications"," ※ We emphasize communication ability We welcome beginners too."],
+      "part3_title":"Treatment, work, benefits",
+      "part3_list":[{
+        "tl":"Salary",
+        "vl":["Determined based on the company's regulations based on years of work experience, qualifications in possession, age etc."]
+      },{
+        "tl":"Various benefits",
+        "vl":["Positioning allowance, family allowance, overtime allowance, commuting allowance (actual expenses), business trip allowance etc.","※奨励一時金制度有"]
+      },{
+        "tl":"Wage Revision",
+        "vl":["once a year (January)"]
+      },{
+        "tl":"bonus",
+        "vl":["Bonus payment when exceeding a certain profit","(as a rule, once a year, winter)"]
+      },{
+        "tl":"Location",
+        "vl":["Tokyo, Osaka and its neighboring prefectures"]
+      },{
+        "tl":"Working Hours",
+        "vl":["9:30～18:30","※It may differ depending on the place of work / job type."]
+      },{
+        "tl":"holiday vacation",
+        "vl":["Saturday, Sunday, public holiday, summer vacation (full-time employee), year-end / new year vacation, paid vacation","※with refreshment vacation","※ holiday vacation may differ depending on the work place and job type There is"]
+      },{
+        "tl":"Insurance",
+        "vl":["health insurance, welfare pension insurance, employment insurance"]
+      },{
+        "tl":"Welfare system",
+        "vl":["Various medical examinations, corporate pensions, property savings, Keio Mikin and others"]
+      },{
+        "tl":"Event etc",
+        "vl":["Various social gatherings, employee travel"]
+      }]
+    },
+
+
+    "contact":{
+      "map_list":[{
+        "name":"Tokyo Head Office",
+        "code":"〒162-0067",
+        "tel":"TEL 03-6709-8260",
+        "fax":"FAX 03-6709-8261",
+        "addr":"1 to 5 Tokumachi, Shinjuku-ku, Tokyo Tokucho 5th Hattori Building 2F",
+        "lat":"35.6918821",
+        "lng":"139.7188033",
+        "id":"office-tokyo__map",
+        "access":"アクセス",
+        "access_list":["4 minutes walk from Toei Shinjuku Line Kashibashi Station","8-minute walk from Tokyo Metro Marunouchi Line Yotsuya-sanchome Station"]
+      },{
+        "name":"Osaka branch office",
+        "code":"〒162-0067",
+        "tel":"TEL 03-6709-8260",
+        "fax":"FAX 03-6709-8261",
+        "addr":"Osaka City Nishi Ward Nishi Honcho 2-1-34 SONO Nishi Honcho Building 4F Floor C",
+        "lat":"34.68289830000001",
+        "lng":"135.49180190000004",
+        "id":"office-osaka__map",
+        "access":"ACCESS",
+        "access_list":["2-1-34, Nishi-cho, Nishi-cho, Nishi-ku, Osaka"]
+      },{
+        "name":"China Xi'an branch office",
+        "code":"〒710077",
+        "tel":"TEL 029-89368167",
+        "fax":"FAX 029-89368167",
+        "addr":"Xi'an District Xian City Xi'an Xin Xi'an Xin Jian Guo No. 10906",
+        "lat":"34.311827",
+        "lng":"109.00838199999998",
+        "id":"office-xian__map",
+        "access":"ACCESS",
+        "access_list":["Get off at Xinjia Temple Public Station on the 2nd Ring Line 2"]
+      }],
+      "con_title":"Contact Us by Phone",
+      "con_date":"reception date: Monday to Friday (except public holidays and New Year holidays)",
+      "con_time":"Opening hours: 09: 45-18: 15",
+      "con_tel":"TEL：03-6709-8260",
+      "con_fax":"FAX：03-6709-8261",
+      "form_ask":"Type of inquiry",
+      "form_sel":"Please select",
+      "form_sel_c1":"Contact regarding our business",
+      "form_sel_c2":"Contact for Recruitment",
+      "form_sel_c3":"Others",
+      "form_name":"Name",
+      "form_email":"email",
+      "form_tel":"telephone",
+      "form_title":"title",
+      "form_con":"Content",
+      "form_agree1":"Security Policy",
+      "form_agree2":"Please confirm",
+      "form_agree3":"If you agree, please check."
     }
 
 

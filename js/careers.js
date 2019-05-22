@@ -13,8 +13,8 @@ var CAREERS = {
   render: function () {
     
     renderTmpl('/tmpl/careers/careers.tmpl', function (r) {
-      $('.m-careers').append($.templates(r).render(e, rdHelper));
-      // CONTACT.initMap();
+      data = _langDB[_langDB.cur].careers
+      $('.m-careers').append($.templates(r).render(data, rdHelper));
     })
    
   }

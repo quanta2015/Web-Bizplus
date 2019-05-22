@@ -1,5 +1,8 @@
 <div class="m-contact-content">
-  <div class="m-section-title">社员福利 - 社内教育</div>
+  <div class="m-section-title">
+    <span data-locate="style.title_main">{{:title_main}}</span> - 
+    <span data-locate="style.title_sub">{{:title_sub}}</span>
+  </div>
 
   
   <div class="m-child-section">
@@ -9,78 +12,35 @@
     
     <div class="m-child-section m-child-info">
       <p class="m-info-wrap">
-        <label>Bizplusの特徴以下の社風を目標としています。</label>
-        <span>社員が自由に発言できる環境</span>
-        <span>コミュニケーションがとれる環境</span>
-        <span>社員間での信頼感がとれていること</span>
-        <span>社員がやりがいを感じ仕事に取り組むこと</span>
-        <span>ざっくばらんに話し合いが行われている環境</span>
-        <span>職場が常に明るい雰囲気と若さのエネルギー</span>
+        <label data-locate="style.style_title">{{:style_title}}</label>
+        {{for style_list}}
+        <span data-locate="style.style_list[{{:#index}}]">{{:#data}}</span>
+        {{/for}}
       </p>
     </div>
 
     <div class="m-style-section">
+      {{for news_list}}
       <div class="m-style-item">
         <div class="m-style-title">
-          <h1>第三回社員旅行</h1>
-          <label>2018.11.22 - 2018.11.23</label>
+          <h1 data-locate="style.news_list[{{:#index}}].title">{{:title}}</h1>
+          <label>{{:date}}</label>
         </div>
         <div class="m-style-list">
+          {{for img_list ~pindex=#index}}
           <div class="m-style-pic">
-            <img src="imgs/style01.jpg" alt="">
-            <span>管理部のアイドル</span>
+            <img src="{{:url}}" alt="">
+            <span data-locate="style.news_list[{{:~pindex}}].img_list[{{:#index}}].tl">{{:tl}}</span>
           </div>
-          <div class="m-style-pic">
-            <img src="imgs/style02.jpg" alt="">
-            <span>代表取締役からのスピーチ</span>
-          </div>
-          <div class="m-style-pic">
-            <img src="imgs/style03.jpg" alt="">
-            <span>一緒に入りたい</span>
-          </div>
+          {{/for}}
         </div>
         <div class="m-style-content">
-            <span>早目の忘年会も兼ねて一泊二日の社員旅行に行ってきました。伊豆シャボテン動物公園で温泉♨に漬かっているカピバラに癒され、大室山を登って、大自然にも恵まれました。</span>
-            <span>一年の疲れが吹っ飛びました。来年また頑張りまーす((´∀｀))</span>
-            <span>ビンゴ大会の一等賞がなんとダイソンのサイクロン掃除機でした</span>
+          {{for desc_list ~pindex=#index}}
+            <span data-locate="style.news_list[{{:~pindex}}].desc_list[{{:#index}}]">{{:#data}}</span>
+          {{/for}}
         </div>
       </div>
-
-      <div class="m-style-item">
-        <div class="m-style-title">
-          <h1>第二回社員旅行</h1>
-          <label>2017.6.9 - 2017.6.11</label>
-        </div>
-        <div class="m-style-content">
-            <span>弊社社員、および関係者をお誘いして２泊３日の社員旅行に出かけました。</span>
-            <span>１日目は沖縄の糸満に行きました、２日目は沖縄ちゅら海水族館へ出かけました。３日目は海水浴を満喫しました。</span>
-            <span>年１回の恒例行事として定着させていきたいと思います。</span>
-        </div>
-      </div>
-
-      <div class="m-style-item">
-        <div class="m-style-title">
-          <h1>第一回社員旅行</h1>
-          <label>2016.4.23 - 2016.4.24</label>
-        </div>
-        <div class="m-style-content">
-            <span>弊社社員、および関係者をお誘いして１泊２日の社員旅行に出かけました。</span>
-            <span>１日目は軽井沢～上田～万座方面、２日目は草津温泉～沼田方面へ出かけました。</span>
-            <span>年１回の恒例行事として定着させていきたいと思います。</span>
-        </div>
-      </div>
-
-      <div class="m-style-item">
-        <div class="m-style-title">
-          <h1>第一回社内忘年会開催</h1>
-          <label>2015.12.23</label>
-        </div>
-        <div class="m-style-content">
-            <span>23日、Bizplus社員と関係者の方々をお呼びして忘年会が行われました。</span>
-            <span>まだ設立されて1年未満の若い会社ですが、多くの方々にご参加いただき賑やかな会となりました。</span>
-            <span>今年一年、お疲れ様でした。 また来年もBizplusをどうぞ宜しくお願い致します。</span>
-        </div>
-      </div>
+      {{/for}}
     </div>
     
   </div>

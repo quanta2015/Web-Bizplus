@@ -30,6 +30,10 @@
     margin-left: 20px;
 }
 
+.m-child-wrap>.m-info {
+    width: 30%;
+}
+
 .m-info>h1 {
     font-size: 24px;
     color: #0274cc;
@@ -202,6 +206,10 @@ button.gm-ui-hover-effect {
       display: block;
       border-bottom: 1px dotted #ccc;
       padding-bottom: 10px;
+  }
+
+  .m-child-wrap>.m-info {
+    width: 100%;
   }
 
   .m-child-wrap {

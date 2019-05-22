@@ -188,38 +188,65 @@ function setLang(langDB) {
 
 
     if (d.indexOf("[") != -1) {
-
-      if( d.split(".").length-1 >1 ) {
-        
-        if (nthIndexOf(d,'.',1)<d.indexOf("[")) {
-          // a.b.c[d]
-          fd0 = d.split(".")[0]
-          fd1 = d.split(".")[1]
-          fd2 = d.split(".")[2].split("[")[0]
-          fd3 = d.split(".")[2].split("[")[1].split("]")[0]
-          ret = e[fd0][fd1][fd2][fd3]
-
-        }else{
-          // a.b[c].d
+      
+      if(d.split("[").length-1>1) {
+        if( d.split(".").length-1 >2 ) {
+          // a.b[c].d[e].f
           fd0 = d.split(".")[0]
           fd1 = d.split(".")[1].split("[")[0]
           fd2 = d.split(".")[1].split("[")[1].split("]")[0]
-          fd3 = d.split(".")[2]
-          ret = e[fd0][fd1][fd2][fd3]
+          fd3 = d.split(".")[2].split("[")[0]
+          fd4 = d.split(".")[2].split("[")[1].split("]")[0]
+          fd5 = d.split(".")[3]
+          ret = e[fd0][fd1][fd2][fd3][fd4][fd5]
+        }else{
+          // a.b[c].d[e]
+          console.log(d)
+
+          fd0 = d.split(".")[0]
+          fd1 = d.split(".")[1].split("[")[0]
+          fd2 = d.split(".")[1].split("[")[1].split("]")[0]
+
+
+          console.log(e[fd0][fd1][fd2])
+          fd3 = d.split(".")[2].split("[")[0]
+          fd4 = d.split(".")[2].split("[")[1].split("]")[0]
+
+          console.log(fd0 + ' ' + fd1 + ' ' + fd2 + ' ' + fd3 + ' '  + fd4)
+
+          ret = e[fd0][fd1][fd2][fd3][fd4]
         }
       }else{
-        if( d.indexOf('.')<d.indexOf('[') ) {
-          // a.b[c]
-          fd0 = d.split(".")[0]
-          fd1 = d.split(".")[1].split("[")[0]
-          fd2 = d.split(".")[1].split("[")[1].split("]")[0]
-          ret = e[fd0][fd1][fd2]
+        if( d.split(".").length-1 >1 ) {
+          if (nthIndexOf(d,'.',1)<d.indexOf("[")) {
+            // a.b.c[d]
+            fd0 = d.split(".")[0]
+            fd1 = d.split(".")[1]
+            fd2 = d.split(".")[2].split("[")[0]
+            fd3 = d.split(".")[2].split("[")[1].split("]")[0]
+            ret = e[fd0][fd1][fd2][fd3]
+          }else{
+            // a.b[c].d
+            fd0 = d.split(".")[0]
+            fd1 = d.split(".")[1].split("[")[0]
+            fd2 = d.split(".")[1].split("[")[1].split("]")[0]
+            fd3 = d.split(".")[2]
+            ret = e[fd0][fd1][fd2][fd3]
+          }
         }else{
-          // a[b].c
-          fd0 = d.split("[")[0]
-          fd1 = d.substr(d.indexOf("[")+1,1)
-          fd2 = d.split(".")[1]
-          ret = e[fd0][fd1][fd2]
+          if( d.indexOf('.')<d.indexOf('[') ) {
+            // a.b[c]
+            fd0 = d.split(".")[0]
+            fd1 = d.split(".")[1].split("[")[0]
+            fd2 = d.split(".")[1].split("[")[1].split("]")[0]
+            ret = e[fd0][fd1][fd2]
+          }else{
+            // a[b].c
+            fd0 = d.split("[")[0]
+            fd1 = d.substr(d.indexOf("[")+1,1)
+            fd2 = d.split(".")[1]
+            ret = e[fd0][fd1][fd2]
+          }
         }
       }
     }else if (d.indexOf(".") != -1){

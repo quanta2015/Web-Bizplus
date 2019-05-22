@@ -114,6 +114,7 @@
 
 .m-business-wrap {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .m-business-wrap>span {
@@ -313,6 +314,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
+    text-align: center;
 }
 
 span.m-os {

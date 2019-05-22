@@ -1,6 +1,8 @@
 <div class="m-contact-content">
-  <div class="m-section-title">社员福利 - 企业文化</div>
-
+  <div class="m-section-title">
+    <span data-locate="edu.title_main">{{:title_main}}</span> - 
+    <span data-locate="edu.title_sub">{{:title_sub}}</span>
+  </div>
 
   
   <div class="m-child-section">
@@ -9,64 +11,27 @@
     </p>
 
     <div class="m-benefit-section">
+      {{for list}}
       <div class="m-benefit-item">
         <div class="m-benefit-head">
-          <img src="imgs/b01.jpg" alt="">
-          <h1>社内教育的目的</h1>
+          <img src="{{:img}}" alt="">
+          <h1 data-locate="edu.list[{{:#index}}].title">{{:title}}</h1>
         </div>
         <div class="m-benefit-main">
           <p>
-            <span>コンプライアンス対策、営業力を高める、魅力ある会社にする、業績を向上させる、生産性アップ、等々から、「従業員のモチベーションアップと能力向上」が人材育成の目的として教育研修を行っています。</span>
-            <span>・日本におけるビジネスマナーの習得</span>
-            <span>・コミュニケーションスキルの向上</span>
-            <span>・日本の風習・日本でのマナー</span>
+            {{for dlist ~pindex=#index}}
+            <span data-locate="edu.list[{{:~pindex}}].dlist[{{:#index}}]">{{:#data}}</span>
+            {{/for}}
           </p>
         </div>
       </div>
-      <div class="m-benefit-item">
-        <div class="m-benefit-head">
-          <img src="imgs/b02.jpg" alt="">
-          <h1>商务礼仪</h1>
-        </div>
-        <div class="m-benefit-main">
-          <p>
-            ビジネスマナーを学ぶ意義は相手を不愉快にさせないというだけでなく、自分の仕事をより有利に進めるための武器でもあるのです。挨拶やお辞儀の仕方といった基本的なものから、ビジネスの現場で必要となる名刺の渡し方など多岐にわたります。ビジネスマナーはコミュニケーションの潤滑油のようなもので、人と人を結びつける最初の一歩です。ビジネスマナー教育では、実際のビジネス現場で役立つマナーに関する常識やポイントなどをわかりやすく勉強していきます。
-          </p>
-        </div>
-      </div>
-      <div class="m-benefit-item m-benefit-big">
-        <div class="m-benefit-head">
-          <img src="imgs/b03.jpg" alt="">
-          <h1>沟通技巧</h1>
-        </div>
-        <div class="m-benefit-main">
-          <p>
-            <span>「不善于与人交流」的人越来越多、沟通技巧已经成为必要的需求。</span>
-            <span>1.语言</span>
-            <span>一つは言語、言葉によるやりとりです。言語によるコミュニケーションでは、「何を伝えたか」よりも「相手にどのように伝わったか」が大切になります。そのために、「伝える」「聞く」「問いかける」が必要です。</span>
-            <span>2.非言語</span>
-            <span>表情、声のトーン、ジェスチャーなどです。ある説において、人に影響を与える情報の割合は、言語が1、非言語が9の割合であるといいます。言葉を補い、信頼関係を築き、相手の状況を理解する、これらに大きな役割を持っています。職場、現場でも多くの方とのコミュニケーションが、より取りやすくなるよう勉強していきます。</span>
-          </p>
-        </div>
-      </div>
-      <div class="m-benefit-item">
-        <div class="m-benefit-head">
-          <img src="imgs/b04.jpg" alt="">
-          <h1>日本的风俗习惯・日本的礼仪</h1>
-        </div>
-        <div class="m-benefit-main">
-          <p>
-            <span>日本文化には、日本独特の様々なルールや習慣があり、伝統的にあらゆる情況においてとても厳格なエチケットルールが存在します。それらは隣人同士や、お店のお客と店員のやりとり、政治家同士のものから、その他あらゆる社会的な情況においてのやりとりにおよんで存在します。日々の生活の疑問などから、テーマにし、各出身国のマナーと対比しながら話合っていきます。</span>
-            <span>日本の風習を知るとこで、日本での生活や仕事がスムーズに行われるようにお互いに理解を深めていきます。</span>
-          </p>
-        </div>
-      </div>
+      {{/for}}
     </div>  
 
 
     <div class="m-benefit-section">
       <div class="m-benefit-title">
-        <span>プログラム</span>
+        <span data-locate="edu.ptitle">{{:ptitle}}</span>
       </div>
       <div class="m-benefit-wrap">
         <div class="m-benefit-person">
@@ -74,46 +39,18 @@
             <img src="imgs/person.svg" alt="">
           </div>
           <div class="m-benefit-profile">
-            <h1>高橋 徹</h1>
-            <p>元銀行員。95年上海支店副支店長, 雑誌「上海」の編集長。02年からはIT業界人材育成などに中国現地で参画。北京軟件、江蘇省無錫基地等で、日本へ技術者派遣に携わる。</p>
+            <h1 data-locate="edu.author">{{:author}}</h1>
+            <p data-locate="edu.desc">{{:desc}}</p>
           </div>
         </div>
         <div class="m-benefit-scheduel">
+          {{for table_list}}
           <div class="m-benefit-row">
-            <span>１か月の予定</span>
-            <span>火曜日</span>
-            <span>水曜日</span>
-            <span>金曜日</span>
-            <span>日曜日</span>
+            {{for clist ~pindex=#index}}
+            <span data-locate="edu.table_list[{{:~pindex}}].clist[{{:#index}}]">{{:#data}}</span>
+            {{/for}}
           </div>
-          <div class="m-benefit-row">
-            <span>第1週目</span>
-            <span> </span>
-            <span>マナー研修</span>
-            <span>ビジネスマナー</span>
-            <span>日本語検定2級、1級</span>
-          </div>
-          <div class="m-benefit-row">
-            <span>第2週目</span>
-            <span>コミュニケーションスキル</span>
-            <span>マナー研修</span>
-            <span>ビジネスマナー</span>
-            <span>日本語検定2級、1級</span>
-          </div>
-          <div class="m-benefit-row">
-            <span>第3週目</span>
-            <span> </span>
-            <span>マナー研修</span>
-            <span>ビジネスマナー</span>
-            <span>日本語検定2級、1級</span>
-          </div>
-          <div class="m-benefit-row">
-            <span>第4週目</span>
-            <span>コミュニケーションスキル</span>
-            <span>マナー研修</span>
-            <span>ビジネスマナー</span>
-            <span>日本語検定2級、1級</span>
-          </div>
+          {{/for}}
         </div>
       </div>
     </div>
