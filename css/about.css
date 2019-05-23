@@ -12,6 +12,7 @@
 
 .ja__txt {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-size: 18px;
 }
 
 .m-about-title {
@@ -129,7 +130,7 @@
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .m-about td {
@@ -207,10 +208,24 @@
   width: 500px
 }
 
+.m-mobile {
+    display: none;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .m-child-section,.m-section__contents {
     padding: 0 20px;
   }
+
+  .m-pc {
+    display: none;
+    }
+
+    .m-mobile {
+    display: block;
+}
 
   .m-about-title {
     font-size: 24px;

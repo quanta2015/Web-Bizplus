@@ -1,0 +1,31 @@
+<div class="m-contact-content">
+  <div class="m-section-title">
+    <span data-locate="access.title_main">{{:title_main}}</span>
+  </div>
+  
+  <div class="m-child-section">
+    <p class="m-child-title ft-oswald"><span>ACCESS</span></p>
+    
+    {{for map_list}}
+    <div class="m-child-wrap">
+      <div class="m-info">
+        <h1 data-locate="access.map_list[{{:#index}}].name">{{:name}}</h1>
+        <p class="m-addr">
+          <span data-locate="access.map_list[{{:#index}}].code">{{:code}}</span>
+          <span data-locate="access.map_list[{{:#index}}].tel">{{:tel}}</span>
+          <span data-locate="access.map_list[{{:#index}}].fax">{{:fax}}</span>
+          <span data-locate="access.map_list[{{:#index}}].addr">{{:addr}}</span>
+        </p>
+        <p class="m-access">
+          <em data-locate="access.map_list[{{:#index}}].access">{{:access}}</em>
+          {{for access_list ~pindex=#index}}
+          <addr data-locate="access.map_list[{{:~pindex}}].access_list[{{:#index}}]">{{:#data}}</addr>
+          {{/for}}
+        </p>
+      </div>
+      <div class="m-map" id="{{:id}}"></div>
+    </div>
+    {{/for}}
+  </div>
+
+</div>

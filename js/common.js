@@ -1,5 +1,5 @@
 const BASE = "http://47.111.22.103";
-const BASE_API = "http://47.111.22.103/api";
+const BASE_API = "";
 
 /* VARIABLE DEF */
 const MASK = 1;
@@ -8,7 +8,7 @@ const NO_MASK = 0;
 
 /* API DEF */
 const GET_ALL_CAROUSELS = '/carousel/getAllCarousel';
-const URL_CONFIG = '/conf/conf.json'
+const POST_COMMENT = '/addContact';
 
 
 /* LODER DEF */
@@ -185,8 +185,6 @@ function setLang(langDB) {
   $("[data-locate]").each(function(m){
     d = $(this).data("locate")
 
-
-
     if (d.indexOf("[") != -1) {
       
       if(d.split("[").length-1>1) {
@@ -271,55 +269,55 @@ function setLang(langDB) {
 }
 
 
-// 初始化多国语言数据
-// function initGlobel() {
-//   langDB = JSON.parse(localStorage.getItem("langDB"));
-
-//   if (!langDB && typeof(langDB)!="undefined" && langDB!=0) {
-//     $.when(
-//       $.ajax('lib/lang/cn.json'),
-//       $.ajax('lib/lang/jp.json'),
-//       $.ajax('lib/lang/en.json'))
-//       .done(function (e1, e2, e3) {
-//         langDB = {
-//           'cn': e1[0],
-//           'jp': e2[0],
-//           'en': e3[0],
-//           'cur': 'jp'
-//         }
-//         localStorage.setItem("langDB",JSON.stringify(langDB))
-//         setLang(langDB)
-//     })
-//   }else{
-//     $('.m-lang span').removeClass('active')
-//     $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
-//     setLang(langDB)
-//   }
-// }
-
 function initGlobel(cb) {
   langDB = JSON.parse(localStorage.getItem("langDB"));
 
   if (!langDB && typeof(langDB)!="undefined" && langDB!=0) {
-    $.when(
-      $.ajax('lib/lang/cn.json'),
-      $.ajax('lib/lang/jp.json'),
-      $.ajax('lib/lang/en.json'))
+    cur = 'jp'
+  }else{
+    cur = langDB.cur
+  }
+
+  $.when(
+      $.ajax('data/lang/cn.json'),
+      $.ajax('data/lang/jp.json'),
+      $.ajax('data/lang/en.json'))
       .done(function (e1, e2, e3) {
         langDB = {
           'cn': e1[0],
           'jp': e2[0],
           'en': e3[0],
-          'cur': 'jp'
+          'cur': cur
         }
+        localStorage.removeItem("langDB")
         localStorage.setItem("langDB",JSON.stringify(langDB))
+
+        $('.m-lang span').removeClass('active')
+        $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
+
         cb(langDB)
     })
-  }else{
-    $('.m-lang span').removeClass('active')
-    $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
-    cb(langDB)
-  }
+  
+  // if (!langDB && typeof(langDB)!="undefined" && langDB!=0) {
+  //   $.when(
+  //     $.ajax('data/lang/cn.json'),
+  //     $.ajax('data/lang/jp.json'),
+  //     $.ajax('data/lang/en.json'))
+  //     .done(function (e1, e2, e3) {
+  //       langDB = {
+  //         'cn': e1[0],
+  //         'jp': e2[0],
+  //         'en': e3[0],
+  //         'cur': 'jp'
+  //       }
+  //       localStorage.setItem("langDB",JSON.stringify(langDB))
+  //       cb(langDB)
+  //   })
+  // }else{
+  //   $('.m-lang span').removeClass('active')
+  //   $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
+  //   cb(langDB)
+  // }
 }
 
 

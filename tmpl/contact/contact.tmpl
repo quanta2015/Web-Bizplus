@@ -4,29 +4,6 @@
   </div>
   
   <div class="m-child-section">
-    <p class="m-child-title ft-oswald"><span>ACCESS</span></p>
-    
-    {{for map_list}}
-    <div class="m-child-wrap">
-      <div class="m-info">
-        <h1 data-locate="contact.map_list[{{:#index}}].name">{{:name}}</h1>
-        <p class="m-addr">
-          <span data-locate="contact.map_list[{{:#index}}].code">{{:code}}</span>
-          <span data-locate="contact.map_list[{{:#index}}].tel">{{:tel}}</span>
-          <span data-locate="contact.map_list[{{:#index}}].fax">{{:fax}}</span>
-          <span data-locate="contact.map_list[{{:#index}}].addr">{{:addr}}</span>
-        </p>
-        <p class="m-access">
-          <em data-locate="contact.map_list[{{:#index}}].access">{{:access}}</em>
-          {{for access_list ~pindex=#index}}
-          <addr data-locate="contact.map_list[{{:~pindex}}].access_list[{{:#index}}]">{{:#data}}</addr>
-          {{/for}}
-        </p>
-      </div>
-      <div class="m-map" id="{{:id}}"></div>
-    </div>
-    {{/for}}
-
 
     <p class="m-child-title ft-oswald"><span>CONTACT</span></p>
 
@@ -43,46 +20,50 @@
       </div>
     </div>
     <div class="m-child-wrap m-child-wrap-s">
-      <div class="m-form">
+      <form class="m-form m-form-contact">
         <div class="m-form-item">
           <div class="m-form-tl m-require" data-locate="contact.form_ask">{{:form_ask}}</div>
           <div class="m-form-ip">
-            <select id="fs_type" class="input--select">
-              <option value="" selected="" data-locate="contact.form_sel">{{:form_sel}}</option>
-              <option data-locate="contact.form_sel_c1">{{:form_sel_c1}}</option>
-              <option data-locate="contact.form_sel_c2">{{:form_sel_c2}}</option>
-              <option data-locate="contact.form_sel_c3">{{:form_sel_c3}}</option>
+            <select id="fs_type" class="input--select form-control">
+              <option value="0" data-locate="contact.form_sel_c1">{{:form_sel_c1}}</option>
+              <option value="1" data-locate="contact.form_sel_c2">{{:form_sel_c2}}</option>
+              <option value="2" data-locate="contact.form_sel_c3">{{:form_sel_c3}}</option>
             </select>
           </div>
         </div>
         <div class="m-form-item">
           <div class="m-form-tl m-require" data-locate="contact.form_name">{{:form_name}}</div>
           <div class="m-form-ip">
-            <input type="text" id="fs_name" class="input--text">
+            <input type="text" id="fs_name" class="input--text form-control" required>
+            <span class="invalid-feedback">请填写姓名</span>
           </div>
         </div>
         <div class="m-form-item ">
           <div class="m-form-tl m-require" data-locate="contact.form_email">{{:form_email}}</div>
           <div class="m-form-ip">
-            <input type="email" id="fs_mail" class="input--text">
+            <input type="email" id="fs_mail" class="input--text form-control" required>
+            <span class="invalid-feedback">请填写有效的电子邮箱</span>
           </div>
         </div>
         <div class="m-form-item">
           <div class="m-form-tl" data-locate="contact.form_tel">{{:form_tel}}</div>
           <div class="m-form-ip">
-            <input type="tel" id="fs_tel" class="input--text">
+            <input type="tel" id="fs_tel" class="input--text form-control" pattern="^1(3|4|5|7|8)\d{9}$" >
+            <span class="invalid-feedback">请填写有效的手机号码</span>
           </div>
         </div>
         <div class="m-form-item">
           <div class="m-form-tl m-require" data-locate="contact.form_title">{{:form_title}}</div>
           <div class="m-form-ip">
-            <input type="text" id="fs_title" class="input--text">
+            <input type="text" id="fs_title" class="input--text form-control" required>
+            <span class="invalid-feedback">请填写题目</span>
           </div>
         </div>
         <div class="m-form-item">
           <div class="m-form-tl m-require" data-locate="contact.form_con">{{:form_con}}</div>
           <div class="m-form-ip">
-            <textarea type="text" id="fs_message" class="input--textarea"rows="8"></textarea>
+            <textarea type="text" id="fs_contact" class="input--textarea form-control"rows="8" required></textarea>
+            <span class="invalid-feedback">请填写留言内容</span>
           </div>
         </div>
         <div class="m-form-item">
@@ -100,9 +81,9 @@
         </div>
         
         <div class="m-form-item">
-          <input type="submit" value="送信" class="input--submit">
+          <input type="button" value="送信" class="input--submit" id="btn-contact">
         </div>
-      </div>
+      </form>
     </div>
   </div>
 

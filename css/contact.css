@@ -235,9 +235,10 @@ button.gm-ui-hover-effect {
     width: auto;
   }
 
+
   .m-child-wrap.m-child-wrap-s {
       padding: 0;
-      margin: -20px;
+      width: 100%;
   }
 
   .m-form {

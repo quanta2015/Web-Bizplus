@@ -2,15 +2,47 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var fs = require('fs');
+var moment = require('moment');
 
 var app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/'));
+app.set('view engine', 'html');
+
+var __projdir = path.resolve(__dirname,'./');
 
 app.get('/', function(req, res) {
   res.sendfile(__dirname + '/index.html');
 });
+
+app.post('/addContact', function (req, res) {
+  var obj = {
+    "name": req.body.name,
+    "email": req.body.email,
+    "tel": req.body.email,
+    "title": req.body.title,
+    "contact": req.body.contact,
+    "type": req.body.type
+  }
+
+  switch(parseInt(obj.type)) {
+    case 0: type = 'business'; break;
+    case 1: type = 'career';   break;
+    case 2: type = 'other';    break;
+  }
+
+  var date = moment().format("YYYYMMDDHHmmss")
+  var filename =  `${__projdir}/data/${type}/${date}.json`
+  var contact = JSON.stringify(obj)
+
+  fs.writeFile(filename, contact, function (err) {
+    if (err) console.error(err);
+    var ret = { msg: `文件保存成功！` };
+    res.send(JSON.stringify(ret));
+  });
+})
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

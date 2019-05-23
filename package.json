@@ -14,7 +14,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "install": "^0.12.2"
+    "html": "^1.0.0",
+    "install": "^0.12.2",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

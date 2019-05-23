@@ -15,24 +15,9 @@ var INDEX = {
   },
 
   renderNews: function() {
-    promiseTmpl('GET', '/tmpl/index/news.tmpl', GET_ALL_CAROUSELS, null, MASK, function (r, e) {
-      e = {
-            news: [{
-              date: "2019.04.01",
-              tl: "コーポレート",
-              content: "コーポレートサイトをリニューアルオープンしました"
-            }, {
-              date: "2019.04.01",
-              tl: "コーポレート",
-              content: "コーポレートサイトをリニューアルオープンしました"
-            }, {
-              date: "2019.04.01",
-              tl: "コーポレート",
-              content: "コーポレートサイトをリニューアルオープンしました"
-            }]
-          }
-
-        $('.m-news').append($.templates(r).render(e, rdHelper));
+    renderTmpl('/tmpl/index/news.tmpl',function (r) {
+      data = { "news": _langDB[_langDB.cur]['home_news'] }
+      $('.m-news').append($.templates(r).render(data, rdHelper));
     });
   },
 

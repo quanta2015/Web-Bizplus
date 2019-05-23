@@ -7,7 +7,13 @@ var CAREERS = {
       renderFoorter();
       initLanguageMenu();
       CAREERS.render();
+
+      $("body").on("click","#btn-career",CAREERS.doContact)
     })
+  },
+
+  doContact: function() {
+    window.location = "contact.html"
   },
 
   render: function () {
