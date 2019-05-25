@@ -1,0 +1,518 @@
+.m-achieve-item {
+    margin: 5px;
+    border: 1px solid #eee;
+}
+
+.m-achieve-head {
+    color: #fff;
+    background: #0274cc;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.m-achieve-row {
+    display: flex;
+    padding: 3px;
+}
+
+.m-achieve-tl {
+    display: block;
+    width: 150px;
+    margin-bottom: 1px;
+    text-align: center;
+    border-right: 1px solid #eee;
+    color: #666;
+    background: #fff;
+}
+
+.m-achieve-co {
+    flex: 1;
+    background: #fff;
+    margin-bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.m-achieve-co>span {
+    padding: 3px 10px;
+    background: #666;
+    margin: 0 5px 5px 0;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+
+span.m-os {
+    background: #ff6600;
+}
+
+span.m-db {
+    background: #006699;
+}
+
+span.m-lang {
+    background: #00a04a;
+}
+
+span.m-search-key {
+    color: #ff0000;
+}
+
+
+
+/*search*/
+.m-search-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    /*background: rgba(0,0,0,.8);*/
+    background: rgba(200,200,200,.5);
+}
+
+.m-search-main {
+    margin: 20px auto;
+    width: 900px;
+    background: #eee;
+    height: calc( 100vh - 40px );
+    border-radius: 2px;
+    padding: 10px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-close {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #ff0000;
+    right: -13px;
+    top: -13px;
+    cursor: pointer;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.m-close:before {
+    content: " ";
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    border-left: 2px solid #eee;
+    height: 15px;
+    width: 0;
+    transform: rotate(45deg);
+}
+
+.m-search-head {
+    display: flex;
+}
+
+.m-close:after {
+    content: " ";
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    border-left: 2px solid #eee;
+    height: 15px;
+    width: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+.m-search-head>input {
+    flex: 1;
+    border: 1px solid #eee;
+}
+
+.m-search-head>button {
+    width: 120px;
+}
+
+.m-search-ret {
+    /*background: #fff;*/
+    margin: 10px 0 0 0;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+.m-style-title {
+    display: flex;
+    padding: 5px 15px;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.m-style-title>h1 {
+    font-size: 24px;
+    color: #0274cc;
+    flex: 1;
+    margin: 0;
+}
+
+.m-style-title>label {
+    font-family: Georgia;
+    color: #0266cc;
+    font-weight: 500;
+    margin: 0;
+}
+
+.m-style-list {
+    display: flex;
+    background: #333;
+    justify-content: space-between;
+}
+
+.m-style-pic {
+    width: 33%;
+    position: relative;
+}
+
+.m-style-pic>img {
+    width: 100%;
+}
+
+.m-style-pic>span {
+    background: rgba(90,90,90,.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.m-style-content {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #666;
+}
+
+.m-style-content {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #666;
+}
+
+
+.m-style-title>h1 {
+    font-size: 14px;
+}
+
+
+
+.m-benefit-wrap {
+    display: flex;
+    width: 100%;
+    background: #ccc;
+    padding: 10px;
+}
+.m-benefit-person {
+    display: flex;
+    width: 320px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+    background: #fff;
+}
+.m-benefit-pic {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+.m-benefit-pic>img {
+    width: 100%;
+}
+.m-benefit-profile {
+    display: flex;
+    flex-direction: column;
+}
+.m-benefit-profile>h1 {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 0;
+    background: #333;
+    color: #fff;
+}
+.m-benefit-profile>p {
+    font-size: 12px;
+    padding: 10px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+.m-benefit-scheduel {
+    background: #fff;
+    flex: 1;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin-left: 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+.m-benefit-row {
+    display: flex;
+}
+.m-benefit-row>span {
+    padding: 8px 0;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-benefit-row>span:nth-child(1) {
+    width: 100px;
+}
+
+.m-benefit-row>span:nth-child(2) {
+    width: 60px;
+}
+
+.m-benefit-row>span:nth-child(3) {
+    flex: 1;
+}
+
+.m-benefit-row>span:nth-child(4) {
+    width: 60px;
+}
+
+.m-benefit-row>span:nth-child(5) {
+    width: 100px;
+}
+
+
+
+
+
+.m-career-title {
+    background: #0274cc;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+}
+.m-career-detail {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.m-career-type {
+    display: flex;
+    padding-top: 10px;
+}
+.m-item-tl {
+    width: 150px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.m-item-co {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.m-item-co>li {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+.m-item-co>li>h1 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 0 5px;
+    position: relative;
+}
+.m-item-co>li>h1:before {
+    width: 16px;
+    height: 16px;
+    background: #333;
+    content: "";
+    display: block;
+    position: absolute;
+    left: -28px;
+}
+.m-item-co>li>span {
+    font-size: 12px;
+    color: #666;
+    position: relative;
+    padding-left: 15px;
+}
+.m-item-co>li>span:before {
+    position: absolute;
+    top: 9px;
+    left: 2px;
+    margin: auto;
+    background-color: #aaa;
+    width: 8px;
+    height: 1px;
+    content: "";
+}
+.m-item-co>li:last-child {
+    border-bottom: 1px dashed #ccc;
+}
+.m-item-co>li+li {
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+}
+.m-child-career+.m-child-career {
+    margin: 10px 0;
+}
+.m-career-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    align-items: flex-start;
+    border-bottom: 1px dashed #eee;
+}
+
+.m-sect+.m-sect {
+    margin: 20px 0;
+}
+
+.m-sect {
+    background: #fff;
+}
+
+.m-achieve-item {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  input.input--submit {
+    font-size: 16px;
+  }
+
+  .m-copyrights {
+    text-align: center;
+  }
+
+
+  .m-search-main {
+    background: transparent;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
+  .m-close {
+      left: 0;
+      top: 0;
+      border-radius: 0;
+      width: 40px;
+      height: 40px;
+  }
+
+  .m-search-head {
+      margin-left: 40px;
+  }
+
+.m-close:before, .m-close:after {
+    right: 18px;
+    height: 30px;
+    top: 5px;
+    border-left: 3px solid #eee;
+}
+
+  .m-search-ret {
+      margin: 0;
+      /*background: rgba(200,200,200,.7);*/
+  }
+
+  .m-search-head>button {
+    width: 80px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.m-achieve-tl {
+    width: auto; 
+  }
+
+
+  .m-style-list {
+    flex-direction: column;
+}
+
+.m-style-pic {
+    width: 100%;
+}
+
+.m-benefit-wrap {
+    flex-direction: column;
+}
+
+.m-benefit-person {
+    width: 100%;
+}
+
+.m-benefit-scheduel {
+    margin: 10px 0 0 0;
+}
+
+.m-benefit-row>span {
+    width: 20%;
+    flex: 1;
+}
+
+.m-career-type {
+    flex-direction: column;
+    padding: 0;
+}
+
+.m-item-tl {
+    width: 100%;
+    padding: 5px 10px;
+    background: #eee;
+    color: #666;
+}
+
+.m-item-co {
+    padding: 10px 10px 0 10px;
+}
+
+.m-career-item {
+    flex-direction: column;
+    padding: 0;
+}
+
+.m-item-co {
+    padding: 5px 10px;
+}
+
+.m-achieve-co>span {
+    width: calc( (100% - 10px)/2 );
+    flex: auto;
+}
+
+
+
+
+}
+

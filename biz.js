@@ -16,6 +16,78 @@ app.get('/', function(req, res) {
   res.sendfile(__dirname + '/index.html');
 });
 
+
+app.get('/search', function(req, res) {
+
+  // var skey = '販売システム'
+  var skey = req.query.skey
+  var code = (skey==="")?0:1;
+
+  if (code === 0) {
+    res.send(JSON.stringify({"code": 0}));
+  }else{
+    var filename =  `${__projdir}/data/lang/jp.json`
+    fs.readFile(filename,'utf-8', function(err,dat){
+      if (err) console.log(err);
+
+      var data = JSON.parse(dat);
+      
+      var achieveList = data.achieve.list
+      var styleList = data.style.news_list
+      var eduList = data.edu
+      var careerList = data.careers
+      var achieveRet = []
+      var styleRet = []
+      var eduRet = []
+      var careerRet = []
+
+      achieveList.map((obj)=>{
+        sb = JSON.stringify(obj)
+        if (sb.indexOf(skey)>0) {
+          let searchMark = `<span class='m-search-key'>${skey}</span>`
+          nb = JSON.parse(sb.split(skey).join(searchMark))
+          achieveRet.push(nb)
+        }
+      })
+
+      styleList.map((obj)=>{
+        sb = JSON.stringify(obj)
+        if (sb.indexOf(skey)>0) {
+          let searchMark = `<span class='m-search-key'>${skey}</span>`
+          nb = JSON.parse(sb.split(skey).join(searchMark))
+          styleRet.push(nb)
+        }
+      })
+
+      sb = JSON.stringify(eduList)
+      if (sb.indexOf(skey)>0) {
+        let searchMark = `<span class='m-search-key'>${skey}</span>`
+        nb = JSON.parse(sb.split(skey).join(searchMark))
+        eduRet= nb
+      }
+
+      sb = JSON.stringify(careerList)
+      if (sb.indexOf(skey)>0) {
+        let searchMark = `<span class='m-search-key'>${skey}</span>`
+        nb = JSON.parse(sb.split(skey).join(searchMark))
+        careerRet= nb
+      }
+      
+      var ret = {
+        "code": code,
+        "achi":achieveRet,
+        "style": styleRet,
+        "edu":eduRet,
+        "career":careerRet
+      }
+
+      res.send(JSON.stringify(ret));
+    })
+    
+  }
+
+});
+
 app.post('/addContact', function (req, res) {
   var obj = {
     "name": req.body.name,

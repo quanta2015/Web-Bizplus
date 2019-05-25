@@ -349,6 +349,11 @@ function renderMenu() {
     setLang(_langDB)
     // initGlobel()
   });
+
+  renderTmpl('/tmpl/index/header.tmpl', function (r) {
+    $('header').append(r);
+    setLang(_langDB)
+  });
 }
 
 
@@ -360,13 +365,6 @@ function renderFoorter() {
     // initGlobel()
   });
 }
-
-
-
-
-
-
-
 
 
 
@@ -392,4 +390,41 @@ window.onload = function() {
     document.addEventListener('gesturestart', function(event) {
         event.preventDefault();
     });
+}
+
+
+
+$(initSearch)
+
+
+function initSearch() {
+  $('body').on('focus','#m-search__input', function() {
+    $('body').append('<div class="m-search-wrap"><div class="m-search-main"><label class="m-close"></label><div class="m-search-head"><input type="text" class="input--text input--text-s" id="searchKey"><button class="input--submit input--submit-s" id="searchBtn">Search</button></div><div class="m-search-ret"></div></div></div>').addClass('fn-hide')
+    $('.g-base').addClass('fn-blur')
+    $('#searchKey').focus()
+  })
+
+  $('body').on('click','.m-close',function(){
+    $('.m-search-wrap').remove()
+    $('.g-base').removeClass('fn-blur')
+    $('body').removeClass('fn-hide')
+  })
+
+
+
+
+  $('body').on('click','#searchBtn',function(){
+    data = { "skey": $('#searchKey').val()}
+    promiseTmpl('get','/tmpl/index/search.tmpl','/search',data,MASK,function(r,e){
+      console.log(e)
+      if (e.code !== 0) {
+        $('.m-search-ret').empty();
+        $('.m-search-ret').append($.templates(r).render(e, rdHelper));
+      }else{
+        toastr.warning('请输入查询内容！')
+      }
+      
+    })
+  })
+
 }

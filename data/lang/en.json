@@ -73,8 +73,8 @@
         "③New challenges are constantly challenging and unique ideas"],
       "greet_title":"Representative greeting",
       "greet_president":"President bizplus Corporation",
-      "greet_jname":"江桥美香",
-      "greet_ename":"YOSHIAKI TAKAHASHI",
+      "greet_jname":"江橋美香",
+      "greet_ename":"EBASHI MIKA",
       "greet_list":["Our company is a company that raises talented Asian talents and provides the best performance to our customers. ","Bizplus, the company name, represents a strong determination to play a plus role in our customers. "," We will continue to work actively to learn the latest IT technology, to activate the active River, and to integrate with the changing social environment. "," I try to be able to be able to be a high quality, safe and active river of t gentle to IT, everyone who is easy to use river and IT that can be used anywhere","Bizplus is a new company with a lot of cheerful young people. It is the strength of youthful motivation, I learn to not lose to anyone, and continue to improve the technology and business manners, and I will do my best to evaluate the trust company. "],
       "r11t":"Company Name",
       "r11v":"Bizplus corporation",
@@ -114,6 +114,8 @@
 
 
     "security":{
+      "title_main":"Corporate info",
+      "title_sub":"Security policy",
       "part1_title":"Personal information protection policy",
       "part1_list":["Bizplus Corporation (hereinafter referred to as our company) recognizes the importance of all personal information handled in the business as an information service industry, and tackles the operation of the personal information protection management system trusted by the customer。",
         "In order to handle the personal information and personal information received from our customers in accordance with the activities of the business, we shall provide the following guidelines: personal information protection policy. We will make this policy well known to the staff (hereinafter referred to as employees) and endeavor to protect appropriate personal information。",
@@ -257,7 +259,7 @@
           "tl4":"Development environment",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SQLSERVER2017</span><span class='m-lang'>C#</span><span class='m-lang'>Javascript</span>"
         },{
-          "title":"経営分析システム（SC第一期）",
+          "title":"経営分析システム(Phase one)",
           "tl1":"システム概要",
           "vl1":"マスタ管理、データ取込み、分析データ出力",
           "tl2":"開発規模：",
@@ -287,7 +289,7 @@
           "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle 11g</span><span class='m-lang'>JAVA8</span><span class='m-lang'>Spring4</span>"
         },{
-          "title":"経営分析システム（SC第二期）",
+          "title":"経営分析システム(Phase two)",
           "tl1":"システム概要",
           "vl1":"マスタ管理、データ作成管理、データ送信管理、",
           "tl2":"開発規模：",
@@ -317,7 +319,7 @@
           "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle</span><span class='m-lang'>VB.net</span>"
         },{
-          "title":"売上管理システム（SC第三期）",
+          "title":"売上管理システム(Phase three)",
           "tl1":"システム概要",
           "vl1":"精算、本社返還、マスタメンテナンス",
           "tl2":"開発規模：",
@@ -327,7 +329,7 @@
           "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle</span><span class='m-lang'>VB.net</span>"
         },{
-          "title":"基幹システム（SLH第一期）",
+          "title":"基幹システム(Phase one)",
           "tl1":"システム概要",
           "vl1":"マスタ、リベート・割戻、ロイヤリティ、買掛、売掛",
           "tl2":"開発規模：",
@@ -337,7 +339,7 @@
           "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle</span><span class='m-lang'>VB.net</span><span class='m-lang'>AWS</span>"
         },{
-          "title":"売上管理システム（SC第四期）",
+          "title":"売上管理システム(Phase four)",
           "tl1":"システム概要",
           "vl1":"マスタ、精算管理、売上管理、返還管理、分析管理",
           "tl2":"開発規模：",
@@ -347,7 +349,7 @@
           "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SQLServer2008R2</span><span class='m-lang'>VB.net</span>"
         },{
-          "title":"基幹システム（SLH第二期）",
+          "title":"基幹システム(Phase two)",
           "tl1":"システム概要",
           "vl1":"経費出庫、検収、原価、在庫、返品、加工、共通検索",
           "tl2":"開発規模：",
@@ -398,13 +400,13 @@
         {
           "clist":["Every month","Tuesday","Wednesday","Friday","Sunday"]
         },{
-          "clist":["First weeks"," ","manners","business manners","Japanese certification class 2, class 1"]
+          "clist":["First weeks"," ","Japanese certification class 2","","free talking"]
         },{
-          "clist":["Second weeks","Communication skills","manners","business manners","Japanese certification class 2, class 1"]
+          "clist":["Second weeks"," ","Business manner","","free talking"]
         },{
-          "clist":["Third weeks"," ","manners","business manners","Japanese certification class 2, class 1"]
+          "clist":["Third weeks"," ","Japanese certification class 1"," ","free talking"]
         },{
-          "clist":["Forth weeks","Communication skills","manners","business manners","Japanese certification class 2, class 1"]
+          "clist":["Forth weeks"," ","manners"," ","Off campus training"]
         }]
     },
 
@@ -449,7 +451,7 @@
       "title_main":"Recruitment info",
       "careers_title":"We are looking for a person who is positive and growing ambitious.",
       "title_list":[
-        "Our company was just founded in 2014.",
+        "Our company was just founded in 2015.",
         "The average age of the employees is 30 years old, characterized by a large number of young people.",
         "If you give it a try, it's an immature company.","That's why growth is an environment where you can challenge anything if you are motivated.",
         "We are looking for people who have ambitions and who can grow together while having fun, who will be able to feel the potential like that.",
@@ -523,9 +525,9 @@
         "lng":"135.49180190000004",
         "id":"office-osaka__map",
         "access":"ACCESS",
-        "access_list":["2-1-34, Nishi-cho, Nishi-cho, Nishi-ku, Osaka"]
+        "access_list":["8 minutes walk from Osaka station"]
       },{
-        "name":"China Xi'an branch office",
+        "name":"China Xi'an partner",
         "code":"〒710077",
         "tel":"TEL 029-89368167",
         "fax":"FAX 029-89368167",

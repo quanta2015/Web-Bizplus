@@ -2,6 +2,7 @@ html,body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "MSゴシック";
 }
 
 .noscroll{
@@ -131,15 +132,20 @@ input.input--submit:hover {
 }
 
 
-@media only screen and (max-width: 768px) {
+.fn-blur {
+  filter: blur(10px);
+}
 
-  input.input--submit {
-    font-size: 16px;
-  }
+.fn-hide {
+  overflow: hidden;
+}
 
-  .m-copyrights {
-    text-align: center;
-  }
+.input--text-s {
+    padding: 5px 15px;
+    height: auto;
+}
 
-
+.input--submit-s {
+    height: 40px;
+  padding: 0;
 }

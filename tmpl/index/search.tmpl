@@ -1,0 +1,138 @@
+<div class="m-search-item">
+ 
+  {{if achi.length!= ""}}
+  <div class="m-sect m-achieve-section">
+  {{for achi}}
+  <div class="m-achieve-item">
+    <div class="m-achieve-head" data-locate="achieve.list[{{:#index}}].title">
+      {{:title}}
+    </div>
+    <div class="m-achieve-wrap">
+      <div class="m-achieve-row">
+        <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl1">{{:tl1}}</div> 
+        <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl1">{{:vl1}}</div>
+      </div>
+      <div class="m-achieve-row">
+        <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl2">{{:tl2}}</div> 
+        <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl2">{{:vl2}}</div>
+      </div>
+      <div class="m-achieve-row">
+        <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl3">{{:tl3}}</div> 
+        <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl3">{{:vl3}}</div>
+      </div>
+      <div class="m-achieve-row">
+        <div class="m-achieve-tl" data-locate="achieve.list[{{:#index}}].tl4">{{:tl4}}</div> 
+        <div class="m-achieve-co" data-locate="achieve.list[{{:#index}}].vl4">{{:vl4}}</div>
+      </div>
+    </div>
+  </div>
+  {{/for}}
+  </div>
+  {{/if}}
+
+  {{if style.length!= ""}}
+  <div class="m-sect m-style-section">
+    {{for style}}
+    <div class="m-style-item">
+      <div class="m-style-title">
+        <h1 data-locate="style.news_list[{{:#index}}].title">{{:title}}</h1>
+        <label>{{:date}}</label>
+      </div>
+      <div class="m-style-list">
+        {{for img_list ~pindex=#index}}
+        <div class="m-style-pic">
+          <img src="{{:url}}" alt="">
+          <span data-locate="style.news_list[{{:~pindex}}].img_list[{{:#index}}].tl">{{:tl}}</span>
+        </div>
+        {{/for}}
+      </div>
+      <div class="m-style-content">
+        {{for desc_list ~pindex=#index}}
+          <span data-locate="style.news_list[{{:~pindex}}].desc_list[{{:#index}}]">{{:#data}}</span>
+        {{/for}}
+      </div>
+    </div>
+    {{/for}}
+  </div>
+  {{/if}}
+
+  {{if edu.length!= ""}}
+  <div class="m-benefit-section">
+    <div class="m-benefit-wrap">
+      <div class="m-benefit-person">
+        <div class="m-benefit-pic">
+          <img src="imgs/person.svg" alt="">
+        </div>
+        <div class="m-benefit-profile">
+          <h1 data-locate="edu.author">{{:edu.author}}</h1>
+          <p data-locate="edu.desc">{{:edu.desc}}</p>
+        </div>
+      </div>
+      <div class="m-benefit-scheduel">
+        {{for edu.table_list}}
+        <div class="m-benefit-row">
+          {{for clist ~pindex=#index}}
+          <span data-locate="edu.table_list[{{:~pindex}}].clist[{{:#index}}]">{{:#data}}</span>
+          {{/for}}
+        </div>
+        {{/for}}
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+  
+  {{if career.length!= ""}}
+  <div class="m-sect m-career-section">
+    <div class="m-child-section m-child-career">
+      <div class="m-career-title" data-locate="careers.part1_title">
+        {{:career.part1_title}}
+      </div>
+      <div class="m-career-detail">
+        <div class="m-career-type">
+          <div class="m-item-tl" data-locate="careers.part1_stitle">{{:career.part1_stitle}}</div>
+          <div class="m-item-co">
+            {{for career.part1_item}}
+            <li>
+              <h1 data-locate="careers.part1_item[{{:#index}}].label">{{:label}}</h1>
+              {{for list ~pindex=#index}}
+              <span data-locate="careers.part1_item[{{:~pindex}}].list[{{:#index}}]">{{:#data}}</span>
+              {{/for}}
+            </li>
+            {{/for}}
+          </div>
+        </div>
+        <div class="m-career-type">
+          <div class="m-item-tl" data-locate="careers.part2_title">{{:career.part2_title}}</div>
+          <div class="m-item-co">
+            {{for career.part2_item}}
+              <span data-locate="careers.part2_item[{{:#index}}]">{{:#data}}</span>
+            {{/for}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="m-sect m-child-section m-child-career">
+      <div class="m-career-title" data-locate="careers.part3_title">
+        {{:career.part3_title}}
+      </div>
+      <div class="m-career-detail">
+        {{for career.part3_list}}
+        <div class="m-career-item">
+          <div class="m-item-tl" data-locate="careers.part3_list[{{:#index}}].tl">{{:tl}}</div>
+          <div class="m-item-co">
+            {{for vl ~pindex=#index}}
+              <span data-locate="careers.part3_list[{{:~pindex}}].vl[{{:#index}}]">{{:#data}}</span>
+            {{/for}}
+          </div>
+        </div>
+        {{/for}}
+      </div>
+    </div>
+  </div>
+  {{/if}}
+
+</div>
+

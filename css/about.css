@@ -64,7 +64,7 @@
 
 .m-about-footer {
     display: flex;
-    width: calc( 100% - 100px );
+    width: calc( 100% - 200px );
     margin: 40px auto;
     padding: 40px 0;
     border-top: 1px solid #333;
@@ -216,7 +216,7 @@
 
 @media only screen and (max-width: 768px) {
   .m-child-section,.m-section__contents {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .m-pc {

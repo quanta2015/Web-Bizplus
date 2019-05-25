@@ -9,7 +9,9 @@
     <link href="http://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,700" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/toastr.min.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/benefit.css">
 
@@ -18,37 +20,18 @@
     <script src="/lib/bootstrap.bundle.min.js"></script>
     <script src="/lib/bootstrap-hover-dropdown.min.js"></script>
     <script src="/lib/jsrender.min.js"></script>
-    <script src="/lib/moment.min.js"></script>
+    <script src="/lib/toastr.min.js"></script>
     
     <title>Bizplus</title>
   </head>
   <body>
     <!-- header language -->
-    <header>
-      <div class="m-hcontact">
-        <span class="m-hcontact-wrap">
-          <img  class="m-hcontact-icon" src="imgs/icon_tel.png">
-          <span class="m-hcontact-tel"> 03-6709-8260</span>
-        </span>
-        <span>9:45～18:15(土日、祝祭日を除く)</span>
-      </div>
-      <div class="m-search">
-        <svg class="g-icon" aria-hidden="true">
-          <use xlink:href="#icon-search"></use>
-        </svg>
-        <input type="text" placeholder="サイト内検索">
-      </div>
-      <div class="m-lang">
-        <span class="active" data-lang='jp'>日</span>
-        <span data-lang='cn'>中</span>
-        <span data-lang='en'>英</span>
-      </div>
-    </header>
+    <header class="g-base"></header>
 
     <!-- nav menu-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light"></nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light g-base"></nav>
 
-    <div class="m-main">
+    <div class="m-main g-base">
       <!-- section card -->
       <div class="m-benefit"></div>
 
