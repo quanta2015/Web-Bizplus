@@ -1,4 +1,5 @@
 {
+
   "menu_home":"Home",
   "menu_company":"Company Info",
   "menu_company_info":"Company Profile",
@@ -11,7 +12,7 @@
   "menu_business_bail":"Outsourcing Solutions",
   "menu_business_othr":"Other Services",
   "menu_business_ache":"Achievements",
-  "menu_benefits":"the welfare of the commune members",
+  "menu_benefits":"Welfare",
   "menu_benefits_cult":"Corporate Style",
   "menu_benefits_tech":"Internal Education",
   "menu_jobs":"Recruitment info",
@@ -35,11 +36,11 @@
     "tl": "Recruitment info",
     "el": "Recruitment info",
     "img": "imgs/card03.jpg",
-    "desc": "We are looking for engineers and general staff. With the expansion of the business, we also put emphasis on the adoption of new graduates, second graduates and middle schools.",
+    "desc": "We are looking for engineers and general staff. With the expansion of the business, I also put emphasis on the adoption of new graduates, second graduates and middle schools.",
     "url": "careers.html"
   }, {
-    "tl": "the welfare of the commune members",
-    "el": "the welfare of the commune members",
+    "tl": "Member benefits",
+    "el": "Member benefits",
     "img": "imgs/card04.jpg",
     "desc": "Education, medical care and welfare of the employees.",
     "url": "benefit.html?type=0"
@@ -49,32 +50,32 @@
     "imgw": "imgs/carousel01w.jpg",
     "imgm": "imgs/carousel01m.jpg",
     "title": "Bizplus",
-    "desc": "help your advance your bussiness"},
+    "desc": "Fulfill your business plus role"},
   {
     "imgw": "imgs/carousel02w.jpg",
     "imgm": "imgs/carousel02m.jpg",
     "title": "Bizplus",
-    "desc": "Continually challenging new technologies and valuing unique ideas"},
+    "desc": "Continually challenging new technologies and taking care of unique ideas"},
   {
     "imgw": "imgs/carousel03w.jpg",
     "imgm": "imgs/carousel03m.jpg",
     "title": "Bizplus",
-    "desc": "help your advance your bussiness"}],
+    "desc": "Fulfill your business plus role"}],
 
 
   "about": {
-      "about":"Company info",
+      "about":"Corporate info",
       "summary_title":"Company summary",
-      "summary_desc":"Bizplus incorporated company was established in September 2015. Which is the software development enterprise mainly with Chinese technicists and  PG、SE、BSE who has the engineering exprience in Japan and China. In order to get close and built the WIN-WIN relationships with customers, we are trying our best to advance the cause.",
+      "summary_desc":"Bizplus Corporation was established in September 2015. It is a software development company by the engineer of China main. We develop and develop a high-quality system tailored to the needs of our customers with PG, Se and BSE with experience in China and Japan. We will be able to build a relationship between our customers and win win.",
       "philosophy_title":"Management philosophy",
-      "philosophy_desc":["①implementing supremacy of customers and grow with customer' bussiness",
+      "philosophy_desc":["①We continue to grow with customer",
         "②Employees who hold excellent skills are the property of the company and support the growth of employees",
-        "③Continually challenging new technologies and valuing unique ideas"],
+        "③New challenges are constantly challenging and unique ideas"],
       "greet_title":"Representative greeting",
       "greet_president":"President bizplus Corporation",
       "greet_jname":"江橋美香",
       "greet_ename":"EBASHI MIKA",
-      "greet_list":["Our company is a company that raises talented Asian talents and provides the best performance to our customers. ","Bizplus, the company name, represents a strong determination to play a plus role in our customers. "," We will continue to work actively to learn the latest IT technology, to activate the active River, and to integrate with the changing social environment. "," Trying to use high quality, safe and  gentle to IT, everyone who is easy to use IT that can be used anywhere","Bizplus is a new company with a lot of cheerful young people and have strength of youthful motivation which is not lose to anyone， and continue to improve the technology and business manners, and we will do our best to evaluate the trust company. "],
+      "greet_list":["Our company is a company that raises talented Asian talents and provides the best performance to our customers. ","Bizplus, the company name, represents a strong determination to play a plus role in our customers. "," We will continue to work actively to learn the latest IT technology, to activate the active River, and to integrate with the changing social environment. "," I try to be able to be able to be a high quality, safe and active river of t gentle to IT, everyone who is easy to use river and IT that can be used anywhere","Bizplus is a new company with a lot of cheerful young people. It is the strength of youthful motivation, I learn to not lose to anyone, and continue to improve the technology and business manners, and I will do my best to evaluate the trust company. "],
       "r11t":"Company Name",
       "r11v":"Bizplus corporation",
       "r12t":"Set up",
@@ -95,7 +96,7 @@
       "r51v":"特13-319165",
       "r52t":"Worker dispatching business license certificate",
       "r52v":"派13-309906",
-      "r61t":"settlement month",
+      "r61t":"Accounts month",
       "r61v":"August",
       "r62t":"Capital",
       "r62v":"2 million yen",
@@ -113,7 +114,7 @@
 
 
     "security":{
-      "title_main":"Company info",
+      "title_main":"Corporate info",
       "title_sub":"Security policy",
       "part1_title":"Personal information protection policy",
       "part1_list":["Bizplus Corporation (hereinafter referred to as our company) recognizes the importance of all personal information handled in the business as an information service industry, and tackles the operation of the personal information protection management system trusted by the customer。",
@@ -127,13 +128,13 @@
       ],
       "part2_title":"Handling of personal information in employment",
       "part2_list":[{ "type":"child-title","val":"Purpose and scope of collection of personal information"},
-        {"type":"","val":"Our company will collect applicant's personal information in the necessary range for the adoption of the employee and use it in in the range of the employment business of the company  (Application qualification, adoption permission judgment, communication, etc.). If you do not wish to provide personal information, Under this situation it is possible to affcet the Admission result. Please understand."},
+        {"type":"","val":"We use the personal information of the applicant collected within the necessary range for the purpose of the adoption of the employee in the range of the employment business of the company (Application qualification, adoption permission judgment, communication, etc.). If you do not wish to provide personal information, it is possible to refuse the offer by the judgment of the person himself. However, please note that this may affect the adoption."},
         {"type":"child-title","val":"Provision of personal information"},
-        {"type":"","val":"Our company do not provide or disclose personal information to any third party except in the following cases.<BR>(1)In the case where the principal has been agreed<BR>(2)In the case where it is necessary to preserve the gross interests of life and health and property of the person and the public<BR>(3)Cases based on laws and regulations"},
+        {"type":"","val":"We do not provide or disclose personal information to any third party except in the following cases.<BR>(1)In the case where the principal has been agreed<BR>(2)In the case where it is necessary to preserve the gross interests of life and health and property of the person and the public<BR>(3)Cases based on laws and regulations"},
         {"type":"child-title","val":"Entrustment of personal information"},
-        {"type":"","val":"Our company may conquer all or part of the handling of personal information for the purpose of the collection use purpose. Our company are responsible for the assessment and management of the information and the handling of personal information."},
+        {"type":"","val":"We may conquer all or part of the handling of personal information for the purpose of the collection use purpose. We are responsible for the assessment and management of the information and the handling of personal information."},
         {"type":"child-title","val":"Safety management of personal information"},
-        {"type":"","val":"(1)In order to prevent personal information leakage, loss, falsification, and illegal access, Our company will continue to take necessary and appropriate safety management measures to protect personal information.<BR>(2)The application form of the person who is adopted as a result of the consideration is handled as personnel management data (personal information in the office) after entering the company. After the selection of the application document of the person who became the non adoption, it is discharged with responsibility.<"},
+        {"type":"","val":"(1)In order to prevent personal information leakage, loss, falsification, and illegal access, we will continue to take necessary and appropriate safety management measures to protect personal information.<BR>(2)The application form of the person who is adopted as a result of the consideration is handled as personnel management data (personal information in the office) after entering the company. After the selection of the application document of the person who became the non adoption, it is discharged with responsibility.<"},
         {"type":"child-title","val":"Disclosure of personal information"},
         {"type":"","val":"When the person is requested to disclose the personal information of the applicant who is acquired and possessed by the company, it is confirmed that it is the person himself, and it responds without delay. For these specific request procedures, please contact the following inquiries. The application form is sent by mail or fax."}]
     },
@@ -151,9 +152,9 @@
         {"type":0,"val":"Many engineers are engaged in system development of Japanese companies for more than 5 years."},
         {"type":0,"val":"In cooperation with partner companies, it’s also possible to do the large-scale development."},
         {"type":0,"val":"Some of our engineers are able to use multiple language, they would develop business without any communication problems."},
-        {"type":0,"val":"Our company is able to develop business oversea."},
+        {"type":0,"val":"We are able to develop business oversea."},
         {"type":1,"val":"Systems development businesses"},
-        {"type":0,"val":"Our company can do proposing from system consulting to design, manufacture, testing, and program protecting."}],
+        {"type":0,"val":"We can do proposing from system consulting to design, manufacture, testing, and program protecting."}],
       "con_list":
         ["As a bridge between Japan and China, we will provide a strategy consultant services to companies.",
          "Expanding Asian market for Japanese companies",
@@ -161,13 +162,13 @@
          "Japanese market and sales strategy for Asian companies",
          "Education · Medical · Operation of large commercial facilities etc."],
       "for_list":
-        ["Our company have many foreign engineers respond to your business promotion and support in the company.",
-         "After obtaining the permission for a specific talent dispatching business in 2015, Our company is deploying dispatching business of foreign engineers in the IT field of Japan.",
+        ["We have many foreign engineers respond to your business promotion and support in our company.",
+         "After obtaining the permission for a specific talent dispatching business in 2015, we are deploying dispatching business of foreign engineers in the IT field of Japan.",
          "Dispatch Contents ： SE,PG,BSE",
          "Dispatch field ： Manufacture,Finance,Securities,logistics,communication,control",
          "Dispatch area ： Tokyo,Osaka,Nagoya,Kyoto,Kobe,Nagano,Hamamatsu"],
       "edu_list":
-        ["Our employees are always taking the lesson of Japanese language education and manners education. According to the customer's hope to attend the lessons which our company already supported the area of education industrialization. ","Our company provides practical lectures in line with practical skills by Japanese teachers. Our target is to pass Japanese JLPT test N1 to N2 Level."]
+        ["Our employees are always taking the lesson of Japanese language education and manners education. Because that a lot of our clients hope to attend the lessons which we already supported, we develope this area of education industrialization. ","We provide practical lectures in line with practical skills by Japanese teachers. Our target is to pass Japanese JLPT test N1 to N2 Level."]
     },
 
 
@@ -205,23 +206,23 @@
       "con_list": {
          "title":"Consultant Business",
          "img":"imgs/skill/other02.jpg",
-         "list":["Asian market sales channel expansion for Japanese companies","business enterprises' M & A support","Asian companies entering Japan and sales strategy partners","Support for management of education, medical care and large commercial facilities","And as a bridge between Japan and Asia, our company provide strategic consulting services for other companies. "]},
+         "list":["Asian market sales channel expansion for Japanese companies","M & A support for business enterprises","Asian companies entering Japan and sales strategy partners","Support for management of education, medical care and large commercial facilities","Japan And as a bridge between Asia and Asia, we provide strategic consulting services for companies. "]},
       "edu_list": {
-         "title":"Talented people Education Project",
+         "title":"Human Resources Education Project",
          "img":"imgs/skill/other03.jpg",
-         "list":["Japanese Business Manners, Communication Skills, Other Education Business"," As part of our company's employee education Which is usual to see, According to our customer's  requests form the employee education which can also accepted by the other customs."]}
+         "list":["Japanese Business Manners, Communication Skills, Other Education Business","We were doing as part of our employee education, but customers other than our company were accepted and commercialized as requested by customers. "]}
     },
 
     "achieve":{
-      "business":"Business area",
-      "business_title":"Development achievement",
+      "business":"事業分野",
+      "business_title":"开发实绩",
       "list":
         [{
-          "title":"Sale system of companyN",
+          "title":"Company N sales system",
           "tl1":"System overview",
           "vl1":"Order function、Sales function、Shipping function",
           "tl2":"Development scale",
-          "vl2":"<span>Secondary development</span><span>20scene</span><span>15man-months </span>",
+          "vl2":"<span>Secondary development</span><span>20Batches</span><span>15man-months </span>",
           "tl3":"working details",
           "vl3":"Detailed design、Manufacture、Unit test、Overall test、Performance improvement",
           "tl4":"Development environment",
@@ -232,130 +233,130 @@
           "tl1":"System overview",
           "vl1":"Master system management, batch data capture",
           "tl2":"Development scale",
-          "vl2":"<span>3 scene</span><span>4 Man-days</span><span>2 man-months </span>",
+          "vl2":"<span>3 Batches</span><span>4 Man-days</span><span>2 man-months </span>",
           "tl3":"working details",
           "vl3":"DB design, manufacturing, unit testing",
           "tl4":"Development environment",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SqlServer2008</span><span class='m-lang'>VB.Net</span>"
         },{
-          "title":"Sale System of companyY",
+          "title":"Y Company Sale System",
           "tl1":"System overview",
           "vl1":"The main body of management is to carry out all kinds of business.",
           "tl2":"Development scale",
-          "vl2":"<span>60scene</span><span>30man-months</span>",
+          "vl2":"<span>60Batches</span><span>30man-months</span>",
           "tl3":"working details",
           "vl3":"Manufacturing, monomer testing, comprehensive testing",
           "tl4":"Development environment",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>Oracle12c</span><span class='m-lang'>VB.Net</span><span class='m-lang'>JAVA</span>"
         },{
-          "title":"Warehouse management system of companyA",
+          "title":"A公司的仓库管理系统",
           "tl1":"System overview",
           "vl1":"Management, Purchase, Delivery, Inventory Management, Data Acquisition",
           "tl2":"Development scale",
-          "vl2":"<span>20scene</span><span>5man-months</span>",
+          "vl2":"<span>20Batches</span><span>5man-months</span>",
           "tl3":"working details",
           "vl3":"DB Design, Manufacturing, Monomer Testing",
           "tl4":"Development environment",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SQLSERVER2017</span><span class='m-lang'>C#</span><span class='m-lang'>Javascript</span>"
         },{
-          "title":"Business analysis system(Phase one)",
-          "tl1":"System overview",
-          "vl1":"Master management、Data receive、Helping analyse data",
-          "tl2":"Development scale：",
-          "vl2":"<span>3scene</span><span>The number of received data4</span><span>8man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Detailed design、Manufacturing、Monomer Testing",
-          "tl4":"Development environment：",
+          "title":"経営分析システム(Phase one)",
+          "tl1":"システム概要",
+          "vl1":"マスタ管理、データ取込み、分析データ出力",
+          "tl2":"開発規模：",
+          "vl2":"<span>3画面</span><span>データ取込数4</span><span>8人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"詳細設計、製造、単体テスト",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SQLServer2008R2</span><span class='m-lang'>VB.net2010</span>"
         },{
-          "title":"ERP saling management system",
-          "tl1":"System overview",
-          "vl1":"Aceept reservation function、Sales volume function、Send out function",
-          "tl2":"Development scale：",
-          "vl2":"<span>Secondary development</span><span>20scene</span><span>15man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Detailed design、Manufacturing、Monomer Testing、comprehensive testing、Function improvement",
-          "tl4":"Development environment：",
+          "title":"ERP販売管理システム",
+          "tl1":"システム概要",
+          "vl1":"受注機能、売上機能、出荷機能",
+          "tl2":"開発規模：",
+          "vl2":"<span>二次開発</span><span>20画面</span><span>15人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"詳細設計、製造、単体テスト、総合テスト、性能改善",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle 11g</span><span class='m-lang'>VB.net</span><span class='m-lang'>Crystal RPT</span>"
         },{
-          "title":"Personal login assess system",
-          "tl1":"system overview",
-          "vl1":"Common parts、Application management、Affirming management、Requsts management、Comment management、User management",
-          "tl2":"Development scale：",
-          "vl2":"<span>Secondary development</span><span>154scene</span><span>Batch number7</span><span>Data output number12</span><span>Receipt number2</span><span>12man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Manufacturing、Monomer Testing、comprehensive testing、Function improvement",
-          "tl4":"Development environment：",
+          "title":"人事登録評価システム",
+          "tl1":"システム概要",
+          "vl1":"共通部品、申請管理、認定管理、請求管理、評価管理、ユーザー管理",
+          "tl2":"開発規模：",
+          "vl2":"<span>二次開発</span><span>154画面</span><span>バッチ数7</span><span>データ出力数12</span><span>帳票数2</span><span>12人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"製造、単体テスト、総合テスト、性能改善",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle 11g</span><span class='m-lang'>JAVA8</span><span class='m-lang'>Spring4</span>"
         },{
-          "title":"Manage analysing system(Phase two)",
-          "tl1":"system overview",
-          "vl1":"Master management、Growing data management、Sending data management、",
-          "tl2":"Development scale：",
-          "vl2":"<span>function add</span><span>4scene</span><span>Sending data number1</span><span>4man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Detailed design、Manufacturing、Monomer Testing",
-          "tl4":"Development environment：",
+          "title":"経営分析システム(Phase two)",
+          "tl1":"システム概要",
+          "vl1":"マスタ管理、データ作成管理、データ送信管理、",
+          "tl2":"開発規模：",
+          "vl2":"<span>機能追加</span><span>4画面</span><span>データ送信数1</span><span>4人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"詳細設計、製造、単体テスト",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>SQLServer2008R2</span><span class='m-lang'>VB.net2010</span>"
         },{
-          "title":"Stuff management system",
-          "tl1":"system overview",
-          "vl1":"Master management、Common management、Shift management、Diligence management",
-          "tl2":"Development scale：",
-          "vl2":"<span>Newing development</span><span>18scene</span><span>14man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Define requirement、 overview design、Detailed design、Manufacturing、Monomer Testing、Conbineing test、Using",
-          "tl4":"Development environment：",
+          "title":"要員管理システム",
+          "tl1":"システム概要",
+          "vl1":"マスタ管理、共通管理、シフト管理、勤怠管理",
+          "tl2":"開発規模：",
+          "vl2":"<span>新規開発</span><span>18画面</span><span>14人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"要件定義、概要設計、詳細設計、製造、単体テスト、結合テスト、運用",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>SLQServer2016</span><span class='m-lang'>VB.net</span>"
         },{
-          "title":"Merchandising system",
-          "tl1":"system overview",
-          "vl1":"Data count",
-          "tl2":"Development scale：",
-          "vl2":"<span>Newing development</span><span>4scene</span><span>4man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Manufacturing、Monomer Testing",
-          "tl4":"Development environment：",
+          "title":"商品販売システム",
+          "tl1":"システム概要",
+          "vl1":"データ集計",
+          "tl2":"開発規模：",
+          "vl2":"<span>新規開発</span><span>4画面</span><span>4人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"製造、単体テスト",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle</span><span class='m-lang'>VB.net</span>"
         },{
-          "title":"Tornover managementsystem(Phase three)",
-          "tl1":"system overview",
-          "vl1":"Actuary、Company restore、Master maintenance",
-          "tl2":"Development scale：",
-          "vl2":"<span>functionadd</span><span>function数15</span><span>6man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Manufacturing、Monomer Testing",
-          "tl4":"Development environment：",
+          "title":"売上管理システム(Phase three)",
+          "tl1":"システム概要",
+          "vl1":"精算、本社返還、マスタメンテナンス",
+          "tl2":"開発規模：",
+          "vl2":"<span>機能追加</span><span>機能数15</span><span>6人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"製造、単体テスト",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle</span><span class='m-lang'>VB.net</span>"
         },{
-          "title":"Basic system(Phase one)",
-          "tl1":"system overview",
-          "vl1":"Master 、Kickback・Discount、Loyalty、Credit buying、Credit saleling",
-          "tl2":"Development scale：",
-          "vl2":"<span>Newing development</span><span>function number45</span><span>30man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Detailed design、Manufacturing、Monomer Testing",
-          "tl4":"Development environment：",
+          "title":"基幹システム(Phase one)",
+          "tl1":"システム概要",
+          "vl1":"マスタ、リベート・割戻、ロイヤリティ、買掛、売掛",
+          "tl2":"開発規模：",
+          "vl2":"<span>新規開発</span><span>機能数45</span><span>30人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"詳細設計、製造、単体テスト",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle</span><span class='m-lang'>VB.net</span><span class='m-lang'>AWS</span>"
         },{
-          "title":"Tornover managementsystem(Phase four)",
-          "tl1":"system overview",
-          "vl1":"Master 、Actuarymanagement、Tornover management、Givingback management、Analysing management",
-          "tl2":"Development scale：",
-          "vl2":"<span>functionadd</span><span>function数27</span><span>10man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Detailed design、Manufacturing、Monomer Testing",
-          "tl4":"Development environment：",
+          "title":"売上管理システム(Phase four)",
+          "tl1":"システム概要",
+          "vl1":"マスタ、精算管理、売上管理、返還管理、分析管理",
+          "tl2":"開発規模：",
+          "vl2":"<span>機能追加</span><span>機能数27</span><span>10人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"詳細設計、製造、単体テスト",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN7</span><span class='m-db'>SQLServer2008R2</span><span class='m-lang'>VB.net</span>"
         },{
-          "title":"Basic system(Phase two)",
-          "tl1":"system overview",
-          "vl1":"Funds out、Check and accept、Orgin price、In the storehouse、Return product、Working over、Common searching",
-          "tl2":"Development scale：",
-          "vl2":"<span>functionadd</span><span>function数51</span><span>30man-months</span>",
-          "tl3":"working details：",
-          "vl3":"Detailed design、Manufacturing、Monomer Testing",
-          "tl4":"Development environment：",
+          "title":"基幹システム(Phase two)",
+          "tl1":"システム概要",
+          "vl1":"経費出庫、検収、原価、在庫、返品、加工、共通検索",
+          "tl2":"開発規模：",
+          "vl2":"<span>機能追加</span><span>機能数51</span><span>30人月</span>",
+          "tl3":"作業内容：",
+          "vl3":"詳細設計、製造、単体テスト",
+          "tl4":"開発環境：",
           "vl4":"<span class='m-os'>WIN10</span><span class='m-db'>Oracle</span><span class='m-lang'>VB.net</span><span class='m-lang'>AWS</span>"
         }]
     },
@@ -366,7 +367,7 @@
       "list":[{
         "title":"The purpose of company education",
         "img":"imgs/b01.jpg",
-        "dlist":["From compliance measures, enhancing sales force, becoming an attractive company, improving business performance, improving productivity, etc., our company is conducting education and training for the purpose of human resource development, such as improvement and motivation of employees",
+        "dlist":["From compliance measures, enhancing sales force, becoming an attractive company, improving business performance, improving productivity, etc., we are conducting education and training for the purpose of human resource development, such as improvement and motivation of employees",
           "・Acquisition of business manners in Japan",
           "・Improving communication skills",
           "・Japanese customs-manners in Japan"]
@@ -374,14 +375,14 @@
         "title":"Business Manner",
         "img":"imgs/b02.jpg",
         "dlist":[
-          "Learning business manner not only  make the other person comfortable, but also a weapon to make your work more advantageous ",
-          "There are a wide variety of basic manners such as greetings and bows, and how to pass business cards that are required for business. ",
-          "Business manners are like lubricants for communication and are the first step to connect with people. ",
-          "In business manner education, our company will teach in an easy-understand way about common manner sense and points related to manners which are useful in actual business situations."]
+          "Not only does the sense of learning business manners not only make the other person uncomfortable, it is also a weapon to make your work more advantageous. ",
+          "There are a wide variety of basics such as greetings and bows, and how to pass business cards that are required for business. ",
+          "Business manners are like lubricants for communication and are the first step in connecting people. ",
+          "In business manner education, we will study common sense and points related to manners that are useful in actual business situations in an easy-to-understand manner."]
       },{
         "title":"Communication Skill",
         "img":"imgs/b03.jpg",
-        "dlist":[" There are so many people talking about [Not good at communication], now the communication skill is required",
+        "dlist":["[Not good at communication] There are so many people talking about it,communication skill is required",
           "1.language",
           "Sentence is easier than language.[how to say the word] is more important than [what you want to say].That’s what we call The Communication. For that reason,[communicate],[listen],[inquire] is important.",
           "2.Body language",
@@ -393,11 +394,11 @@
           "After you understand the Japanese manners, life and work will goes better and it’s better to understand each other."]
       }],
       "ptitle":"Program",
-      "author":"Takahashi Testu",
+      "author":"高橋 徹",
       "desc":"A former bank clerk. Chief editor of Shanghai Branch Branch, magazine Shanghai in 1995. Since 1902, he participated in the IT industry training in China. He was involved in dispatching technicians to Japan in the hokukyo soft matter and Wuxi base, Jiangsu province.",
       "table_list":[
         {
-          "clist":["Reserve a month","Tuesday","Wednesday","Friday","Sunday"]
+          "clist":["Every month","Tuesday","Wednesday","Friday","Sunday"]
         },{
           "clist":["First weeks"," ","Japanese certification class 2","","free talking"]
         },{
@@ -405,7 +406,7 @@
         },{
           "clist":["Third weeks"," ","Japanese certification class 1"," ","free talking"]
         },{
-          "clist":["Forth weeks"," ","Communication skiils"," ","Off campus training"]
+          "clist":["Forth weeks"," ","manners"," ","Off campus training"]
         }]
     },
 
@@ -415,7 +416,7 @@
       "style_title":"Characteristics of Bizplus are targeted to the following corporate culture.",
       "style_list":["an environment where employees can speak freely","an environment where communication can be taken","the confidence among employees is taken","an employee feels worthwhile to work on work","The environment in which discussions are taking place"," the workplace always has a bright atmosphere and the energy of youth"],
       "news_list":[{
-        "title":"The 3rd Employee Travel",
+        "title":"3rd Employee Travel",
         "date":"2018.11.22 - 2018.11.23",
         "img_list":[{
           "tl":"Managed Idle",
@@ -427,14 +428,14 @@
           "tl":"I want to join together",
           "url":"imgs/style03.jpg"
         }],
-        "desc_list":["I went on an employee trip for two days a night as a early-year-end party. Healed by capybara soaked in a hot spring bath at Izu Shaboten Animal Park, climbed Mt. I was blessed with a great deal of fatigue.","I'm going to try again next year ((')`))","The first prize of the Bingo tournament was Dyson's Cyclone vacuum cleaner"]
+        "desc_list":["I went on an employee trip for two days a night as a early-year-end party. Healed by capybara soaked in a hot spring bath at Izu Shaboten Animal Park, climbed Mt. I was blessed with a great deal of fatigue.","I'm going to try again next year ((')`))","What was the first prize of the Bingo tournament was Dyson's Cyclone vacuum cleaner"]
       },{
-        "title":"The 2nd Employee Travel",
+        "title":"2nd Employee Travel",
         "date":"2017.6.9 - 2017.6.11",
         "img_list":[],
         "desc_list":["I went on a trip for 3 days and 2 nights to invite our employees and related people.","The first day went to Itoman in Okinawa, the second day was Okinawa Churaumi I went to the aquarium and enjoyed swimming on the third day.","I would like to establish it as an annual event once a year."]
       },{
-        "title":"The first Time Employee Travel",
+        "title":"First Time Employee Travel",
         "date":"2016.4.23 - 2016.4.24",
         "img_list":[],
         "desc_list":["We went out for a 2-day trip to our company and our associates.","The first day is Karuizawa-Ueda-Manza area, the second day is Kusatsu Onsen- I went out to the area of ​​Numata. ","I would like to be established as an annual event once a year."]
@@ -465,17 +466,17 @@
         "list":["If you are interested in IT","Information system design of various industries such as administration, logistics, finance, sales management (preferring those who have some kind of strength)","Network construction and Software and system development and proposal","Business application development (Java, .NET etc.)","Web application development (PHP, Ruby, Perl etc) ","Communication application development (Java, C # etc) ","Network and server construction operation","Information system maintenance and operation, help desk","System maintenance and operation","Android, iPhone development"]
       }],
       "part2_title":"eligibility",
-      "part2_item":["If you have a high school or higher education background, have experience in IT design / development, project management, and consultant. And you have advanced technical qualifications"," ※ We emphasize communication ability We welcome beginners too."],
+      "part2_item":["If you have a high school or higher, have experience in IT design / development, project management, and consultant. And you have advanced technical qualifications"," ※ We emphasize communication ability We welcome beginners too."],
       "part3_title":"Treatment, work, benefits",
       "part3_list":[{
         "tl":"Salary",
         "vl":["Determined based on the company's regulations based on years of work experience, qualifications in possession, age etc."]
       },{
         "tl":"Various benefits",
-        "vl":["Positioning allowance, family allowance, overtime allowance, commuting allowance (actual expenses), business trip allowance etc.","※Having bonus system"]
+        "vl":["Positioning allowance, family allowance, overtime allowance, commuting allowance (actual expenses), business trip allowance etc.","※奨励一時金制度有"]
       },{
         "tl":"Wage Revision",
-        "vl":["once a year (A month)"]
+        "vl":["once a year (January)"]
       },{
         "tl":"bonus",
         "vl":["Bonus payment when exceeding a certain profit","(as a rule, once a year, winter)"]
@@ -512,7 +513,7 @@
         "lat":"35.6918821",
         "lng":"139.7188033",
         "id":"office-tokyo__map",
-        "access":"access",
+        "access":"アクセス",
         "access_list":["4 minutes walk from Toei Shinjuku Line Kashibashi Station","8-minute walk from Tokyo Metro Marunouchi Line Yotsuya-sanchome Station"]
       },{
         "name":"Osaka branch office",

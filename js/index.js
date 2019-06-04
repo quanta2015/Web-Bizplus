@@ -15,10 +15,15 @@ var INDEX = {
   },
 
   renderNews: function() {
-    renderTmpl('/tmpl/index/news.tmpl',function (r) {
-      data = { "news": _langDB[_langDB.cur]['home_news'] }
-      $('.m-news').append($.templates(r).render(data, rdHelper));
+    promiseTmpl('get','/tmpl/index/news.tmpl','/news',null,MASK,function (r,d) {
+      console.log(r)
+      // data = { "news": d }
+      $('.m-news').append($.templates(r).render(d, rdHelper));
     });
+    // renderTmpl('/tmpl/index/news.tmpl',function (r) {
+    //   data = { "news": _langDB[_langDB.cur]['home_news'] }
+    //   $('.m-news').append($.templates(r).render(data, rdHelper));
+    // });
   },
 
   renderCard: function() {

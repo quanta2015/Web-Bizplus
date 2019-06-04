@@ -111,25 +111,31 @@
     </p>
 
     <div class="m-section__contents">
-      <div class="child__txt ja__txt">
-        <p class="child-section__img">
-          <img src="imgs/head.jpg" alt="">
+      <div class="child__txt ja__txt m-greet-wrap">
+        <p class="child-section__img m-xj">
+          <img src="imgs/xj.jpg" alt="">
           <label class="m-img-profile">
             <span class="m-img-header" data-locate="about.greet_president">Bizplus株式会社 代表取締役社長</span>
             <span class="m-img-jname">江橋美香</span>
             <span class="m-img-ename">/ EBASHI MIKA</span>
           </label>
         </p>
-        
-        {{for greet_list}}
+
+        <div class="m-greet">
+          {{for greet_list}}
           <p class="child-section__txt" data-locate="about.greet_list[{{:#index}}]">
             {{:#data}}
           </p>
-        {{/for}}
+          {{/for}}
+          <p class="child-section__txt fn-right fn-margin">
+            <span data-locate="about.greet_president">{{:greet_president}}</span>
+            <br data-locate="about.greet_ename">江橋 美香<br>2017年7月吉日
+          </p>
+        </div>
         
-        <p class="child-section__txt fn-right fn-margin">
-          <span data-locate="about.greet_president">{{:greet_president}}</span>
-          <br data-locate="about.greet_ename">江橋 美香<br>2017年7月吉日</p>
+        
+        
+        
       </div>
     </div>
   </div>

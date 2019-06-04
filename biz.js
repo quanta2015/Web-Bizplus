@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var fs = require('fs');
 var moment = require('moment');
+var superAgent = require('superagent');
+var cheerio = require('cheerio');
+
 
 var app = express();
 app.use(express.json());
@@ -17,16 +20,47 @@ app.get('/', function(req, res) {
 });
 
 
+
+app.get('/news', function(req, res) {
+  var url = 'https://www.msn.com/ja-jp/news/techandscience'
+  var opt = {
+      Referer: url,
+      'User-Agent': "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+  }
+  superAgent.get(url).set(opt).end(function(err, response) {
+      if (err) {
+          console.log(err.status)
+          return false;
+      }
+      if (response.status === 200) {
+          var $ = cheerio.load(response.text)
+          var newslist = $(".newlist").find('li')
+          var sectlist = $('.sectionheadlines').find('li')
+          var news = []
+          savenews(newslist,news,$)
+          savenews(sectlist,news,$)
+
+          var ret ={
+            "news": news
+          }
+
+          res.send(JSON.stringify(ret));
+      } // end of res 
+  }) // end of superagent
+});
+
+
+
 app.get('/search', function(req, res) {
 
   // var skey = '販売システム'
-  var skey = req.query.skey
+  var { skey, lang } = req.query
   var code = (skey==="")?0:1;
 
   if (code === 0) {
     res.send(JSON.stringify({"code": 0}));
   }else{
-    var filename =  `${__projdir}/data/lang/jp.json`
+    var filename =  `${__projdir}/data/lang/${lang}.json`
     fs.readFile(filename,'utf-8', function(err,dat){
       if (err) console.log(err);
 
@@ -40,11 +74,12 @@ app.get('/search', function(req, res) {
       var styleRet = []
       var eduRet = []
       var careerRet = []
+      let searchMark = `<em class='m-search-key'>${skey}</em>`
 
       achieveList.map((obj)=>{
         sb = JSON.stringify(obj)
         if (sb.indexOf(skey)>0) {
-          let searchMark = `<span class='m-search-key'>${skey}</span>`
+          
           nb = JSON.parse(sb.split(skey).join(searchMark))
           achieveRet.push(nb)
         }
@@ -53,7 +88,6 @@ app.get('/search', function(req, res) {
       styleList.map((obj)=>{
         sb = JSON.stringify(obj)
         if (sb.indexOf(skey)>0) {
-          let searchMark = `<span class='m-search-key'>${skey}</span>`
           nb = JSON.parse(sb.split(skey).join(searchMark))
           styleRet.push(nb)
         }
@@ -61,14 +95,12 @@ app.get('/search', function(req, res) {
 
       sb = JSON.stringify(eduList)
       if (sb.indexOf(skey)>0) {
-        let searchMark = `<span class='m-search-key'>${skey}</span>`
         nb = JSON.parse(sb.split(skey).join(searchMark))
         eduRet= nb
       }
 
       sb = JSON.stringify(careerList)
       if (sb.indexOf(skey)>0) {
-        let searchMark = `<span class='m-search-key'>${skey}</span>`
         nb = JSON.parse(sb.split(skey).join(searchMark))
         careerRet= nb
       }
@@ -170,4 +202,26 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
+}
+
+
+function savenews(list,ret,$) {
+  list.map((i,o)=>{
+    if (typeof($(o).find('a>img').data('src')) === 'undefined') return;
+    if (typeof($(o).find('a>div>p>img').data('src')) === 'undefined') return;
+      
+    var url = 'https://www.msn.com/' + $(o).find('a').attr('href')
+    var img = 'http://' + $(o).find('a>img').data('src').default.split('//')[1]
+    var title = $(o).find('div h3').text()
+    var icon = 'http://' + $(o).find('a>div>p>img').data('src').default.split('//')[1]
+    var from = $(o).find('a>div>p>span').eq(0).text()
+    var item = {
+        "url":url,
+        "img":img,
+        "title":title,
+        "icon":icon,
+        "from":from
+    }
+    ret.push(item)
+  })
 }
