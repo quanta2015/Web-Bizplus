@@ -15,7 +15,7 @@ var INDEX = {
   },
 
   renderNews: function() {
-    promiseTmpl('get','/tmpl/index/news.tmpl','/news',null,MASK,function (r,d) {
+    promiseTmpl('get','/tmpl/index/news.tmpl','/news',null,NO_MASK,function (r,d) {
       console.log(r)
       // data = { "news": d }
       $('.m-news').append($.templates(r).render(d, rdHelper));

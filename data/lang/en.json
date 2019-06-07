@@ -74,7 +74,12 @@
       "greet_president":"President bizplus Corporation",
       "greet_jname":"江橋美香",
       "greet_ename":"EBASHI MIKA",
-      "greet_list":["Our company is a company that raises talented Asian talents and provides the best performance to our customers. ","Bizplus, the company name, represents a strong determination to play a plus role in our customers. "," We will continue to work actively to learn the latest IT technology, to activate the active River, and to integrate with the changing social environment. "," Trying to use high quality, safe and  gentle to IT, everyone who is easy to use IT that can be used anywhere","Bizplus is a new company with a lot of cheerful young people and have strength of youthful motivation which is not lose to anyone， and continue to improve the technology and business manners, and we will do our best to evaluate the trust company. "],
+      "greet_list":[
+        "Our company is a company that raises talented Asian talents and provides the best performance to our customers. ",
+        "Bizplus, the company name, represents a strong determination to play a plus role in our customers. ",
+        " We will continue to work actively to learn the latest IT technology, to activate the active River, and to integrate with the changing social environment. ",
+        " Trying to use high quality, safe and  gentle to IT, everyone who is easy to use IT that can be used anywhere",
+        "Bizplus is a new company with a lot of cheerful young people and have strength of youthful motivation which is not lose to anyone， and continue to improve the technology and business manners, and we will do our best to evaluate the trust company. "],
       "r11t":"Company Name",
       "r11v":"Bizplus corporation",
       "r12t":"Set up",
@@ -415,6 +420,14 @@
       "style_title":"Characteristics of Bizplus are targeted to the following corporate culture.",
       "style_list":["an environment where employees can speak freely","an environment where communication can be taken","the confidence among employees is taken","an employee feels worthwhile to work on work","The environment in which discussions are taking place"," the workplace always has a bright atmosphere and the energy of youth"],
       "news_list":[{
+        "title":"プログラミング勉強会",
+        "date":"2019-06-04",
+        "img_list":[{
+          "tl":"管理部のアイドル",
+          "url":"imgs/style04.jpg"
+        }],
+        "desc_list":["まずは参加者全員でボードゲームをプレイして、次にそれをプログラムで書いてみようというテーマでプログラミングの学習を行っています。","プログラムに書き起こすためには、ゲームのルールを理解して、それを論理的に組み上げる必要があります。","使用する言語は、自由に選択でき、業務で使う言語や興味のある言語でプログラムを作っています。","また、同時にアジャイル開発思考も取り入れて柔軟なプログラミングを学んでいます。"]
+      },{
         "title":"The 3rd Employee Travel",
         "date":"2018.11.22 - 2018.11.23",
         "img_list":[{
