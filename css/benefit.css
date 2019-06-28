@@ -213,13 +213,18 @@
 .m-style-list {
     display: flex;
     background: #333;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
-.m-style-pic {
-    width: 33%;
+.m-style-pic:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .m-style-pic {
+    width: calc( (100% - 10px)/3 );
     position: relative;
-}
+    margin-right: 5px;
+  }
 
 .m-style-pic>img {
     width: 100%;

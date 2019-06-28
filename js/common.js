@@ -21,21 +21,13 @@ const MSG_ERROR = "网络出错！";
 
 
 /* AJAX DEF */
-
 function renderTmpl(tmpl, cb) {  
   $.ajax({url: tmpl, async: false}).then(function(e) { 
     cb(e);
   });
 }
 
-/**
- * 
- * @param {请求类型} method 
- * @param {请求API} url 
- * @param {请求数据} data 
- * @param {是否LOADING} isMask 
- * @param {回调} cb 
- */
+
 function promise(method, url, data, isMask, cb) {
   isMask ? $('body').append(LOADER) : null;
   var promise = $.ajax({
@@ -57,15 +49,6 @@ function promise(method, url, data, isMask, cb) {
     });
 }
 
-/**
- * 
- * @param {请求类型} method 
- * @param {模版地址} tmpl 
- * @param {请求API} url 
- * @param {请求数据} data 
- * @param {是否LOADING} isMask 
- * @param {回调} cb 
- */
 function promiseTmpl(method, tmpl, url, data, isMask, cb) {
   isMask ? $('body').append(LOADER) : null;
   $.when(
@@ -84,15 +67,6 @@ function promiseTmpl(method, tmpl, url, data, isMask, cb) {
   });
 }
 
-/**
- * 两个GET请求渲染一个tmpl
- * 
- * @param {模版地址} tmpl 
- * @param {请求第一个API} url_a 
- * @param {请求第二个API} url_b 
- * @param {是否LOADING} isMask 
- * @param {回调} cb 
- */
 function promiseTmplWhen(tmpl, url_a, url_b, isMask, cb) {  
   isMask ? $('body').append(LOADER) : null;
   $.when(
@@ -156,8 +130,7 @@ function encodeQuery(obj) {
   return params.join('&')
 }
 
-function getUrlVars()
-{
+function getUrlVars() {
     var vars = [], hash;
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
     for(var i = 0; i < hashes.length; i++)
@@ -176,8 +149,6 @@ function nthIndexOf(str,c,num){
     }
     return x;
 }
-
-
 
 // 根据语言数据设置DOm节点
 function setLang(langDB) {
@@ -279,9 +250,9 @@ function initGlobel(cb) {
   }
 
   $.when(
-      $.ajax('data/lang/cn.json'),
-      $.ajax('data/lang/jp.json'),
-      $.ajax('data/lang/en.json'))
+      $.ajax('/data/lang/cn.json'),
+      $.ajax('/data/lang/jp.json'),
+      $.ajax('/data/lang/en.json'))
       .done(function (e1, e2, e3) {
         langDB = {
           'cn': e1[0],
@@ -297,27 +268,6 @@ function initGlobel(cb) {
 
         cb(langDB)
     })
-  
-  // if (!langDB && typeof(langDB)!="undefined" && langDB!=0) {
-  //   $.when(
-  //     $.ajax('data/lang/cn.json'),
-  //     $.ajax('data/lang/jp.json'),
-  //     $.ajax('data/lang/en.json'))
-  //     .done(function (e1, e2, e3) {
-  //       langDB = {
-  //         'cn': e1[0],
-  //         'jp': e2[0],
-  //         'en': e3[0],
-  //         'cur': 'jp'
-  //       }
-  //       localStorage.setItem("langDB",JSON.stringify(langDB))
-  //       cb(langDB)
-  //   })
-  // }else{
-  //   $('.m-lang span').removeClass('active')
-  //   $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
-  //   cb(langDB)
-  // }
 }
 
 
@@ -347,12 +297,17 @@ function renderMenu() {
     $('nav').append(r);
     $.fn.bootstrapDropdownHover({});
     setLang(_langDB)
-    // initGlobel()
   });
 
   renderTmpl('/tmpl/index/header.tmpl', function (r) {
     $('header').append(r);
     setLang(_langDB)
+
+    //设置当前语言
+    let langDB = JSON.parse(localStorage.getItem("langDB"));
+    let cur = langDB.cur
+    $('.m-lang span').removeClass('active')
+    $(`.m-lang span[data-lang="${langDB['cur']}"]`).addClass('active')
   });
 }
 
@@ -365,8 +320,6 @@ function renderFoorter() {
     // initGlobel()
   });
 }
-
-
 
 
 
@@ -396,7 +349,6 @@ window.onload = function() {
 
 $(initSearch)
 
-
 function initSearch() {
   $('body').on('focus','#m-search__input', function() {
     $('body').append('<div class="m-search-wrap" id="gsr"><div class="m-search-main"><label class="m-close"></label><div class="m-search-head"><input type="text" class="input--text input--text-s" id="searchKey"><button class="input--submit input--submit-s" id="searchBtn">Search</button></div><div class="m-search-ret"></div></div></div>').addClass('fn-hide')
@@ -411,10 +363,7 @@ function initSearch() {
   })
 
 
-
-
   $('body').on('click','#searchBtn',function(){
-    
     data = { "skey": $('#searchKey').val(), "lang": JSON.parse(localStorage.getItem("langDB")).cur}
     promiseTmpl('get','/tmpl/index/search.tmpl','/search',data,MASK,function(r,e){
       console.log(e)
