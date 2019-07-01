@@ -351,8 +351,16 @@ function sendMail(message,cb) {
 }
 
 
-function scan() {
-  const path  = `${__dirname}/data/business/`;
+function scan(type) {
+  let toMail;
+
+  switch(type) {
+    case 'business': toMail = config.mail.bussinessMail; break;
+    case 'career':   toMail = config.mail.careerMail;    break;
+    case 'other':    toMail = config.mail.otherMail;     break;
+  }
+
+  const path  = `${__dirname}/data/${type}/`;
   const bpath = `${__dirname}/data/backup/b`;
   const files = fs.readdirSync(path);
 
@@ -364,8 +372,8 @@ function scan() {
       jsonData = JSON.parse(fs.readFileSync(fp,'utf-8'));
       let msg = {
         from: config.mail.user,
-        to: config.mail.bussinessMail,
-        bcc: config.mail.bussinessMail,
+        to:   toMail,
+        bcc:  toMail,
         subject: `${jsonData.title}`,
         text: `from: ${jsonData.name}<${jsonData.email}>\ntelephone:${jsonData.tel}\ncontact:\n${jsonData.contact}`
       };
@@ -381,7 +389,9 @@ function  scheduleScanMail() {
   var rule = new schedule.RecurrenceRule(); 
   rule.minute = [0, 15, 30, 45];  
   schedule.scheduleJob(rule,()=>{
-    scan()
+    scan('business')
+    scan('career')
+    scan('other')
   }); 
 }
 

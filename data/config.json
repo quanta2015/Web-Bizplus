@@ -1,1 +1,11 @@
-{"mail":{"host":"smtp.163.com","port":"465","user":"liyangtom@163.com","pwd":"qwe123qwe123","bussinessMail":"22931451@qq.com","careerMail":"jiang.wei@bizplus-inc.co.jp","otherMail":"22931451@qq.com"}}
+{
+  "mail": {
+    "host": "smtp.163.com",
+    "port": "465",
+    "user": "liyangtom@163.com",
+    "pwd": "qwe123qwe123",
+    "bussinessMail": "22931451@qq.com",
+    "careerMail": "jiang.wei@bizplus-inc.co.jp",
+    "otherMail": "22931451@qq.com"
+  }
+}
