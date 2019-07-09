@@ -212,7 +212,7 @@
 
 .m-style-list {
     display: flex;
-    background: #333;
+    /*background: #333;*/
     /*justify-content: space-between;*/
 }
 

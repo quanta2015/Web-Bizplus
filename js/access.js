@@ -43,7 +43,7 @@ function googlemap(o,index) {
       [{"featureType": "all",
         "elementType": "all",
         "stylers": [{
-          "saturation": "-100"
+          // "saturation": "-100"
         }]
       }];
 

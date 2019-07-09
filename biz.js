@@ -265,14 +265,14 @@ httpServer.on('listening', onListening);
 
 
 
-// var https = require('https');
-// var options = {
-//   key:fs.readFileSync('./key/1679788_manqc.top.key'),
-//   cert:fs.readFileSync('./key/1679788_manqc.top.pem'),
-//   ca:fs.readFileSync('./key/1679788_manqc.top.pem')
-// }
-// var httpsServer = https.createServer(options,app).listen(443);
-// httpsServer.on('error', onError);
+var https = require('https');
+var options = {
+  key:fs.readFileSync('./key/server.key'),
+  cert:fs.readFileSync('./key/server.csr'),
+  // ca:fs.readFileSync('./key/1679788_manqc.top.pem')
+}
+var httpsServer = https.createServer(options,app).listen(443);
+httpsServer.on('error', onError);
 
 
 function onError(error) {
