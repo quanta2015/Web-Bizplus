@@ -1,5 +1,5 @@
 {
-    "header_work_time": "9:45 ~ 18:15 (excluding Saturdays, Sundays and national holidays)",
+    "header_work_time": "9:30 ~ 18:30 (excluding Saturdays, Sundays and national holidays)",
     "menu_home": "Home",
     "menu_company": "Company Info",
     "menu_company_info": "Company Profile",
@@ -140,6 +140,7 @@
             "5. Education and training of personal information protection will understand the importance of personal information protection and ensure that the personal information protection policy will be permeated to the entire company, and the necessary education, enlightenment and auditing will be carried out in order to treat the individual information appropriately.",
             "6. Improvement of the management system of the social security system."
         ],
+        "part1_tail": ["Establishment date：2017年12月1日 The Most Recent Revision:：2019年6月28日","Bizplus Corporation","Personnel management group","TEL:03-6709-8260 FAX: 03-6709-8260","E-mail: info@bizplus-inc.com"],
         "part2_title": "Handling of personal information in employment",
         "part2_list": [
             {
@@ -696,7 +697,7 @@
             {
                 "tl": "Various benefits",
                 "vl": [
-                    "Positioning allowance, family allowance, overtime allowance, commuting allowance (actual expenses), business trip allowance etc.",
+                    "Positioning allowance, overtime allowance, commuting allowance (actual expenses), business trip allowance etc.",
                     "※Having bonus system"
                 ]
             },
@@ -729,7 +730,7 @@
             {
                 "tl": "holiday vacation",
                 "vl": [
-                    "Saturday, Sunday, public holiday, summer vacation (full-time employee), year-end / new year vacation, paid vacation",
+                    "Saturday, Sunday, public holiday, summer vacation , year-end / new year vacation, paid vacation",
                     "※with refreshment vacation",
                     "※ holiday vacation may differ depending on the work place and job type There is"
                 ]
@@ -743,7 +744,7 @@
             {
                 "tl": "Welfare system",
                 "vl": [
-                    "Various medical examinations, corporate pensions, property savings, Keio Mikin and others"
+                    "Various medical examinations, Keio Mikin and others"
                 ]
             },
             {

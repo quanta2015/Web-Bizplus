@@ -15,6 +15,13 @@
       <p class="child-section__txt" data-locate="security.part1_list[{{:#index}}]">{{:#data}}</p>
       {{/for}}
     </div>
+
+    <div class="tail__txt ja__txt">
+      {{for part1_tail}}
+      <p class="child-section__txt" data-locate="security.part1_tail[{{:#index}}]">{{:#data}}</p>
+      {{/for}}
+    </div>
+
   </div>
 
   <p class="m-about-title">
@@ -27,7 +34,6 @@
       {{for part2_list}}
       <p class="child-section__txt {{:type}}" data-locate="security.part2_list[{{:#index}}].val">{{:val}}</p>
       {{/for}}
-
     </div>
   </div>
 
@@ -38,7 +44,6 @@
       <div class="m-contact__wrap">
         <span  data-locate="security.footer_department">{{:footer_department}}</span>
         <span>TEL：03-6709-8260  FAX：03-6709-8261</span>
-        <span>E-mail:info@bizplus-inc.com</span>
         <span></span>
       </div>
     </div>

@@ -15,6 +15,18 @@
     font-size: 16px;
 }
 
+.tail__txt>p {
+    margin: 3px;
+    font-size: 14px;
+}
+.tail__txt {
+    width: 800px;
+    text-align: right;
+    
+    padding-bottom: 30px;
+}
+
+
 .m-about-title {
     font-size: 32px;
     display: flex;
@@ -190,6 +202,8 @@
     width: 300px;
 }
 
+
+
 .m-child-section {
   margin: 0 auto;
   padding: 60px 0;
@@ -324,6 +338,12 @@
 
 .m-xj {
     background: #eee;
+}
+
+.tail__txt {
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
 }
 
 
