@@ -121,7 +121,7 @@ nav.navbar {
     align-items: center;
     padding: 6px 0 0 30px;
     display: flex;
-    z-index: 999;
+    z-index: 9999;
     background: rgba(255,255,255,.95)!important;
     left: 0;
     right: 0;
