@@ -1,0 +1,57 @@
+
+<p class="m-child-title ft-oswald">
+  <span>事业概要</span>
+</p>
+
+<div class="m-bs-section">
+  <div class="m-bs-item">
+    <div class="m-bs-head">
+      <img src="imgs/skill/bs01.jpg" alt="">
+      <h1 data-locate="business.dev_title">{{:dev_title}}</h1>
+    </div>
+    <div class="m-bs-desc">
+      {{for dev_list}}
+        {{if (type==1)}}
+          <h2 data-locate="business.dev_list[{{:#getIndex()}}].val">{{:val}}</h2>
+        {{else}}
+          <span data-locate="business.dev_list[{{:#getIndex()}}].val">{{:val}}</span>
+        {{/if}}
+      {{/for}}
+    </div>
+  </div>
+  <div class="m-bs-item">
+    <div class="m-bs-head">
+      <img src="imgs/skill/bs02.jpg" alt="">
+      <h1 data-locate="business.con_title">{{:con_title}}</h1>
+    </div>
+    <div class="m-bs-desc">
+      {{for con_list}}
+        <span data-locate="business.con_list[{{:#getIndex()}}]">{{:#data}}</span>
+      {{/for}}
+    </div>
+  </div>
+  <div class="m-bs-item">
+    <div class="m-bs-head">
+      <img src="imgs/skill/bs03.jpg" alt="">
+      <h1 data-locate="business.for_title">{{:for_title}}</h1>
+    </div>
+    <div class="m-bs-desc">
+      {{for for_list}}
+        <span data-locate="business.for_list[{{:#getIndex()}}]">{{:#data}}</span>
+      {{/for}}
+    </div>
+  </div>
+  <div class="m-bs-item">
+    <div class="m-bs-head">
+      <img src="imgs/skill/bs04.jpg" alt="">
+      <h1 data-locate="business.edu_title">{{:edu_title}}</h1>
+    </div>
+    <div class="m-bs-desc">
+      {{for edu_list}}
+        <span data-locate="business.edu_list[{{:#getIndex()}}]">{{:#data}}</span>
+      {{/for}}
+    </div>
+  </div>
+  
+
+</div>

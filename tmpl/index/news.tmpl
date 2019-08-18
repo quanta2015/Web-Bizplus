@@ -1,19 +1,11 @@
 <div class="m-title ft-oswald">
-  <span>NEWS RELEASE</span>
+  <span>お知らせ</span>
 </div>
 <div class="m-news-wrap">
   {{for news}}
     <div class="m-news-item">
-      <img src="{{:img}}" alt="">
-      <div class="m-news-main">
-        <a href="{{:url}}" target="_blank">
-          <span class="m-news-title">{{:title}}</span>
-        </a>
-        <p>
-          <img src="{{:icon}}" alt="">
-          <span>{{:from}}</span>
-        </p>
-      </div>
+      <div class="m-news-date">{{:date}}</div>
+      <div class="m-news-title" data-locate="home_news[{{:#index}}].title">{{:title}}</div>
     </div>
   {{/for}}
 </div>
